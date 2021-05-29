@@ -1,0 +1,44 @@
+{
+  "$id": "http://our.company.com/companySearch.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "examples": [
+    {
+      "minEmployees": 0,
+      "maxEmployees": 0,
+      "name": "company"
+    }
+  ],
+  "required": [],
+  "title": "Our Company Search Schema",
+  "type": "object",
+  "properties": {
+    "minEmployees": {
+      "$id": "#/properties/minEmployees",
+      "default": 0,
+      "description": "Filter companies based on minimum number of employees.",
+      "examples": [0],
+      "minLength": 1,
+      "title": "The minEmployees schema",
+      "type": "integer"
+    },
+    "maxEmployees": {
+      "$id": "#/properties/maxEmployees",
+      "default": 0,
+      "description": "Filter companies based on maximum number of employees.",
+      "examples": [0],
+      "minLength": 1,
+      "title": "The maxEmployees schema",
+      "type": "integer"
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "default": "",
+      "description": "Filter companies based on name.",
+      "examples": ["company"],
+      "title": "The name schema",
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
