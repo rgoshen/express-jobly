@@ -126,6 +126,19 @@ describe("findAll", function () {
       },
     ]);
   });
+
+  test("works: by min-max employees", async function () {
+    let companies = await Company.findAll({ minEmployees: 1, maxEmployees: 1 });
+    expect(companies).toEqual([
+      {
+        handle: "c1",
+        name: "C1",
+        description: "Desc1",
+        numEmployees: 1,
+        logoUrl: "http://c1.img",
+      },
+    ]);
+  });
 });
 
 /************************************** get */
