@@ -157,6 +157,15 @@ describe("findAll", function () {
     let companies = await Company.findAll({ name: "nope" });
     expect(companies).toEqual([]);
   });
+
+  test("bad request if invalid min > max", async function () {
+    try {
+      await Company.findAll({ minEmployees: 10, maxEmployees: 1 });
+      fail();
+    } catch (err) {
+      expect(err instanceof BadRequestError).toBeTruthy();
+    }
+  });
 });
 
 /************************************** get */
