@@ -152,6 +152,11 @@ describe("findAll", function () {
       },
     ]);
   });
+
+  test("works: empty list on nothing found", async function () {
+    let companies = await Company.findAll({ name: "nope" });
+    expect(companies).toEqual([]);
+  });
 });
 
 /************************************** get */
