@@ -2,7 +2,7 @@
 
 const jwt = require("jsonwebtoken");
 const { UnauthorizedError } = require("../expressError");
-const { authenticateJWT, ensureLoggedIn, ensureIsAdmin } = require("./auth");
+const { authenticateJWT, ensureLoggedIn, ensureAdmin } = require("./auth");
 
 const { SECRET_KEY } = require("../config");
 const testJwt = jwt.sign({ username: "test", isAdmin: false }, SECRET_KEY);
@@ -73,7 +73,7 @@ describe("ensureLoggedIn", function () {
   });
 });
 
-describe("ensureIsAdmin", function () {
+describe("ensureAdmin", function () {
   test("works", function () {
     expect.assertions(1);
     const req = {};
@@ -81,7 +81,7 @@ describe("ensureIsAdmin", function () {
     const next = function (err) {
       expect(err).toBeFalsy();
     };
-    ensureIsAdmin(req, res, next);
+    ensureAdmin(req, res, next);
   });
 
   test("unauth if not admin", function () {
@@ -91,7 +91,7 @@ describe("ensureIsAdmin", function () {
     const next = function (err) {
       expect(err instanceof UnauthorizedError).toBeTruthy();
     };
-    ensureIsAdmin(req, res, next);
+    ensureAdmin(req, res, next);
   });
 
   test("unauth if anon", function () {
@@ -101,6 +101,6 @@ describe("ensureIsAdmin", function () {
     const next = function (err) {
       expect(err instanceof UnauthorizedError).toBeTruthy();
     };
-    ensureIsAdmin(req, res, next);
+    ensureAdmin(req, res, next);
   });
 });
