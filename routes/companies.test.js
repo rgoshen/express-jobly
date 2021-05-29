@@ -129,6 +129,13 @@ describe("GET /companies", function () {
     });
   });
 
+  test("bad request if invalid filter key", async function () {
+    const resp = await request(app)
+      .get("/companies")
+      .query({ minEmployees: 2, nope: "nope" });
+    expect(resp.statusCode).toEqual(400);
+  });
+
   test("fails: test next() handler", async function () {
     // there's no normal failure event which will cause this route to fail ---
     // thus making it hard to test that the error-handler works with it. This
