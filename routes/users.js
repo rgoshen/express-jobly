@@ -62,7 +62,7 @@ router.get("/", ensureAdmin, async function (req, res, next) {
  *
  * Returns { username, firstName, lastName, isAdmin }
  *
- * Authorization required: login
+ * Authorization required: admin or same user-as-:username
  **/
 
 router.get(
@@ -85,7 +85,7 @@ router.get(
  *
  * Returns { username, firstName, lastName, email, isAdmin }
  *
- * Authorization required: login
+ * Authorization required: admin or same user-as-:username
  **/
 
 router.patch(
@@ -109,7 +109,7 @@ router.patch(
 
 /** DELETE /[username]  =>  { deleted: username }
  *
- * Authorization required: login
+ * Authorization required: admin or same user-as-:username
  **/
 
 router.delete(
