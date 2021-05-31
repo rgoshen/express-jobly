@@ -47,32 +47,46 @@ class Job {
     return jobsRes.rows;
   }
 
-  /** Given a company handle, return data about company.
+  /** Given a job id, return data about job.
    *
-   * Returns { handle, name, description, numEmployees, logoUrl, jobs }
-   *   where jobs is [{ id, title, salary, equity, companyHandle }, ...]
+   * Returns { id, title, salary, equity, companyHandle, company }
+   *   where company is { handle, name, description, numEmployees, logoUrl }
    *
    * Throws NotFoundError if not found.
    **/
 
-  // static async get(handle) {
-  //   const companyRes = await db.query(
-  //     `SELECT handle,
-  //                 name,
-  //                 description,
-  //                 num_employees AS "numEmployees",
-  //                 logo_url AS "logoUrl"
-  //          FROM companies
-  //          WHERE handle = $1`,
-  //     [handle]
-  //   );
+  static async get(id) {
+    const jobRes = await db.query(
+      `SELECT id,
+              title,
+              salary,
+              equity,
+              company_handle AS "companyHandle"
+      FROM jobs
+      WHERE id = $1`,
+      [id]
+    );
 
-  //   const company = companyRes.rows[0];
+    const job = jobRes.rows[0];
 
-  //   if (!company) throw new NotFoundError(`No company: ${handle}`);
+    if (!job) throw new NotFoundError(`No job: ${id}`);
 
-  //   return company;
-  // }
+    const companiesRes = await db.query(
+      `SELECT handle,
+              name,
+              description,
+              num_employees AS "numEmployees",
+              logo_url AS "logoUrl"
+      FROM companies
+      WHERE handle = $1`,
+      [job.companyHandle]
+    );
+
+    delete job.companyHandle;
+    job.company = companiesRes.rows[0];
+
+    return job;
+  }
 
   /** Update company data with `data`.
    *
