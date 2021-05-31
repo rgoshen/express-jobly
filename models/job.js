@@ -27,23 +27,25 @@ class Job {
     return job;
   }
 
-  /** Find all companies.
+  /** Find all jobs.
    *
-   * Returns [{ handle, name, description, numEmployees, logoUrl }, ...]
+   * Returns [{ id, title, salary, equity, companyHandle, companyName }, ...]
    * */
 
-  // static async findAll() {
-  //   const companiesRes = await db.query(
-  //     `SELECT handle,
-  //                 name,
-  //                 description,
-  //                 num_employees AS "numEmployees",
-  //                 logo_url AS "logoUrl"
-  //          FROM companies
-  //          ORDER BY name`
-  //   );
-  //   return companiesRes.rows;
-  // }
+  static async findAll() {
+    const jobsRes = await db.query(
+      `SELECT j.id,
+              j.title,
+              j.salary,
+              j.equity,
+              j.company_handle AS "companyHandle",
+              c.name AS "companyName"
+      FROM jobs j
+      LEFT JOIN companies AS c ON c.handle = j.company_handle
+      ORDER BY title`
+    );
+    return jobsRes.rows;
+  }
 
   /** Given a company handle, return data about company.
    *
