@@ -10,6 +10,7 @@ const { ensureAdmin } = require("../middleware/auth");
 const Job = require("../models/job");
 
 const jobNewSchema = require("../schemas/jobNew.json");
+const jobUpdateSchema = require("../schemas/jobUpdate.json");
 
 const router = new express.Router();
 
@@ -69,31 +70,29 @@ router.get("/:id", async function (req, res, next) {
   }
 });
 
-/** PATCH /[handle] { fld1, fld2, ... } => { company }
+/** PATCH /[jobId]  { fld1, fld2, ... } => { job }
  *
- * Patches company data.
+ * Data can include: { title, salary, equity }
  *
- * fields can be: { name, description, numEmployees, logo_url }
+ * Returns { id, title, salary, equity, companyHandle }
  *
- * Returns { handle, name, description, numEmployees, logo_url }
- *
- * Authorization required: login
+ * Authorization required: admin
  */
 
-// router.patch("/:handle", ensureLoggedIn, async function (req, res, next) {
-//   try {
-//     const validator = jsonschema.validate(req.body, companyUpdateSchema);
-//     if (!validator.valid) {
-//       const errs = validator.errors.map((e) => e.stack);
-//       throw new BadRequestError(errs);
-//     }
+router.patch("/:id", ensureAdmin, async function (req, res, next) {
+  try {
+    const validator = jsonschema.validate(req.body, jobUpdateSchema);
+    if (!validator.valid) {
+      const errs = validator.errors.map((e) => e.stack);
+      throw new BadRequestError(errs);
+    }
 
-//     const company = await Company.update(req.params.handle, req.body);
-//     return res.json({ company });
-//   } catch (err) {
-//     return next(err);
-//   }
-// });
+    const job = await Job.update(req.params.id, req.body);
+    return res.json({ job });
+  } catch (err) {
+    return next(err);
+  }
+});
 
 /** DELETE /[handle]  =>  { deleted: handle }
  *
