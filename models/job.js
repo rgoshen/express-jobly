@@ -27,23 +27,53 @@ class Job {
     return job;
   }
 
-  /** Find all jobs.
+  /** Find all jobs (optional filter on searchFilters).
+   *
+   * searchFilters (all optional):
+   * - minSalary
+   * - hasEquity (true returns only jobs with equity > 0, other values ignored)
+   * - title (will find case-insensitive, partial matches)
    *
    * Returns [{ id, title, salary, equity, companyHandle, companyName }, ...]
    * */
 
-  static async findAll() {
-    const jobsRes = await db.query(
-      `SELECT j.id,
-              j.title,
-              j.salary,
-              j.equity,
-              j.company_handle AS "companyHandle",
-              c.name AS "companyName"
-      FROM jobs j
-      LEFT JOIN companies AS c ON c.handle = j.company_handle
-      ORDER BY title`
-    );
+  static async findAll({ minSalary, hasEquity, title } = {}) {
+    let query = `SELECT j.id,
+                        j.title,
+                        j.salary,
+                        j.equity,
+                        j.company_handle AS "companyHandle",
+                        c.name AS "companyName"
+                 FROM jobs j 
+                   LEFT JOIN companies AS c ON c.handle = j.company_handle`;
+    let whereExpressions = [];
+    let queryValues = [];
+
+    // For each possible search term, add to whereExpressions and
+    // queryValues so we can generate the right SQL
+
+    if (minSalary !== undefined) {
+      queryValues.push(minSalary);
+      whereExpressions.push(`salary >= $${queryValues.length}`);
+    }
+
+    if (hasEquity === true) {
+      whereExpressions.push(`equity > 0`);
+    }
+
+    if (title !== undefined) {
+      queryValues.push(`%${title}%`);
+      whereExpressions.push(`title ILIKE $${queryValues.length}`);
+    }
+
+    if (whereExpressions.length > 0) {
+      query += " WHERE " + whereExpressions.join(" AND ");
+    }
+
+    // Finalize query and return results
+
+    query += " ORDER BY title";
+    const jobsRes = await db.query(query, queryValues);
     return jobsRes.rows;
   }
 
