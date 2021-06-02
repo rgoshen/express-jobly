@@ -11,6 +11,7 @@ const Job = require("../models/job");
 
 const jobNewSchema = require("../schemas/jobNew.json");
 const jobUpdateSchema = require("../schemas/jobUpdate.json");
+const jobSearchSchema = require("../schemas/jobSearch.json");
 
 const router = new express.Router();
 
@@ -38,15 +39,32 @@ router.post("/", ensureAdmin, async function (req, res, next) {
   }
 });
 
-/** GET /  =>
+/** GET / =>
  *   { jobs: [ { id, title, salary, equity, companyHandle, companyName }, ...] }
  *
+ * Can provide search filter in query:
+ * - minSalary
+ * - hasEquity (true returns only jobs with equity > 0, other values ignored)
+ * - title (will find case-insensitive, partial matches)
+
  * Authorization required: none
  */
 
 router.get("/", async function (req, res, next) {
+  const queryObj = req.query;
+  // arrive as strings from querystring, but we want as int/bool
+  if (queryObj.minSalary !== undefined)
+    queryObj.minSalary = +queryObj.minSalary;
+  queryObj.hasEquity = queryObj.hasEquity === "true";
+
   try {
-    const jobs = await Job.findAll();
+    const validator = jsonschema.validate(queryObj, jobSearchSchema);
+    if (!validator.valid) {
+      const errs = validator.errors.map((e) => e.stack);
+      throw new BadRequestError(errs);
+    }
+
+    const jobs = await Job.findAll(queryObj);
     return res.json({ jobs });
   } catch (err) {
     return next(err);
