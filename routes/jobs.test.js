@@ -81,85 +81,69 @@ describe("POST /jobs", function () {
 
 /************************************** GET /jobs */
 
-// describe("GET /companies", function () {
-//   test("ok for anon", async function () {
-//     const resp = await request(app).get("/companies");
-//     expect(resp.body).toEqual({
-//       companies:
-//           [
-//             {
-//               handle: "c1",
-//               name: "C1",
-//               description: "Desc1",
-//               numEmployees: 1,
-//               logoUrl: "http://c1.img",
-//             },
-//             {
-//               handle: "c2",
-//               name: "C2",
-//               description: "Desc2",
-//               numEmployees: 2,
-//               logoUrl: "http://c2.img",
-//             },
-//             {
-//               handle: "c3",
-//               name: "C3",
-//               description: "Desc3",
-//               numEmployees: 3,
-//               logoUrl: "http://c3.img",
-//             },
-//           ],
-//     });
-//   });
+describe("GET /jobs", function () {
+  test("ok for anon", async function () {
+    const resp = await request(app).get("/jobs");
+    expect(resp.body).toEqual({
+      jobs: [
+        {
+          id: expect.any(Number),
+          title: "J1",
+          salary: 1,
+          equity: "0.1",
+          companyHandle: "c1",
+          companyName: "C1",
+        },
+        {
+          id: expect.any(Number),
+          title: "J2",
+          salary: 2,
+          equity: "0.2",
+          companyHandle: "c1",
+          companyName: "C1",
+        },
+        {
+          id: expect.any(Number),
+          title: "J3",
+          salary: 3,
+          equity: null,
+          companyHandle: "c1",
+          companyName: "C1",
+        },
+      ],
+    });
+  });
+});
 
-//   test("fails: test next() handler", async function () {
-// there's no normal failure event which will cause this route to fail ---
-// thus making it hard to test that the error-handler works with it. This
-// should cause an error, all right :)
-//     await db.query("DROP TABLE companies CASCADE");
-//     const resp = await request(app)
-//         .get("/companies")
-//         .set("authorization", `Bearer ${u1Token}`);
-//     expect(resp.statusCode).toEqual(500);
-//   });
-// });
+/************************************** GET /jobs/:id */
 
-/************************************** GET /jobs/:handle */
+describe("GET /jobs/:id", function () {
+  test("works for anon", async function () {
+    const resp = await request(app).get(`/jobs/${testJobIds[0]}`);
+    expect(resp.body).toEqual({
+      job: {
+        id: testJobIds[0],
+        title: "J1",
+        salary: 1,
+        equity: "0.1",
+        company: {
+          handle: "c1",
+          name: "C1",
+          description: "Desc1",
+          numEmployees: 1,
+          logoUrl: "http://c1.img",
+        },
+      },
+    });
+  });
 
-// describe("GET /companies/:handle", function () {
-//   test("works for anon", async function () {
-//     const resp = await request(app).get(`/companies/c1`);
-//     expect(resp.body).toEqual({
-//       company: {
-//         handle: "c1",
-//         name: "C1",
-//         description: "Desc1",
-//         numEmployees: 1,
-//         logoUrl: "http://c1.img",
-//       },
-//     });
-//   });
+  test("not found for no such job", async function () {
+    const resp = await request(app).get(`/jobs/0`);
+    expect(resp.statusCode).toEqual(404);
+  });
+});
 
-//   test("works for anon: company w/o jobs", async function () {
-//     const resp = await request(app).get(`/companies/c2`);
-//     expect(resp.body).toEqual({
-//       company: {
-//         handle: "c2",
-//         name: "C2",
-//         description: "Desc2",
-//         numEmployees: 2,
-//         logoUrl: "http://c2.img",
-//       },
-//     });
-//   });
-
-//   test("not found for no such company", async function () {
-//     const resp = await request(app).get(`/companies/nope`);
-//     expect(resp.statusCode).toEqual(404);
-//   });
-// });
-
-/************************************** PATCH /jobs/:handle */
+/************************************** PATCH /jobs/:id */
 
 // describe("PATCH /companies/:handle", function () {
 //   test("works for users", async function () {
@@ -220,7 +204,7 @@ describe("POST /jobs", function () {
 //   });
 // });
 
-/************************************** DELETE /jobs/:handle */
+/************************************** DELETE /jobs/:id */
 
 // describe("DELETE /companies/:handle", function () {
 //   test("works for users", async function () {

@@ -38,41 +38,36 @@ router.post("/", ensureAdmin, async function (req, res, next) {
 });
 
 /** GET /  =>
- *   { companies: [ { handle, name, description, numEmployees, logoUrl }, ...] }
- *
- * Can filter on provided search filters:
- * - minEmployees
- * - maxEmployees
- * - nameLike (will find case-insensitive, partial matches)
+ *   { jobs: [ { id, title, salary, equity, companyHandle, companyName }, ...] }
  *
  * Authorization required: none
  */
 
-// router.get("/", async function (req, res, next) {
-//   try {
-//     const companies = await Company.findAll();
-//     return res.json({ companies });
-//   } catch (err) {
-//     return next(err);
-//   }
-// });
+router.get("/", async function (req, res, next) {
+  try {
+    const jobs = await Job.findAll();
+    return res.json({ jobs });
+  } catch (err) {
+    return next(err);
+  }
+});
 
-/** GET /[handle]  =>  { company }
+/** GET /[jobId] => { job }
  *
- *  Company is { handle, name, description, numEmployees, logoUrl, jobs }
- *   where jobs is [{ id, title, salary, equity }, ...]
+ *  Job is { id, title, salary, equity, company }
+ *   where company is { handle, name, description, numEmployees, logoUrl }
  *
  * Authorization required: none
  */
 
-// router.get("/:handle", async function (req, res, next) {
-//   try {
-//     const company = await Company.get(req.params.handle);
-//     return res.json({ company });
-//   } catch (err) {
-//     return next(err);
-//   }
-// });
+router.get("/:id", async function (req, res, next) {
+  try {
+    const job = await Job.get(req.params.id);
+    return res.json({ job });
+  } catch (err) {
+    return next(err);
+  }
+});
 
 /** PATCH /[handle] { fld1, fld2, ... } => { company }
  *
