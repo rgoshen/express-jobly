@@ -21,7 +21,7 @@
     <img src="images/nodejs.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Express Jobly</h3>
+  <h3 align="center">Express Jobly Backend</h3>
 
   <p align="center">
     A job search API.
@@ -41,6 +41,7 @@
 
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
+  - [Default Endpoint](#default-endpoints)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -55,6 +56,15 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+
+This document describes the Jobly Backend API.
+
+### Default endpoints:
+
+- localserver:3001/companies
+- localserver:3001/users
+- localserver:3001/jobs
+- localserver:3001/auth
 
 ### Built With
 
