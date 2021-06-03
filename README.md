@@ -7,7 +7,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -145,16 +144,13 @@ Project Link: [https://github.com/rgoshen/express-jobly](https://github.com/rgos
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/rgoshen/repo.svg?style=flat-square
-[contributors-url]: https://github.com/rgoshen/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/rgoshen/repo.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/rgoshen/express-jobly
 [forks-url]: https://github.com/rgoshen/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/rgoshen/repo.svg?style=flat-square
-[stars-url]: https://github.com/rgoshen/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/rgoshen/repo.svg?style=flat-square
-[issues-url]: https://github.com/rgoshen/repo/issues
-[license-shield]: https://img.shields.io/github/license/rgoshen/repo.svg?style=flat-square
-[license-url]: https://github.com/rgoshen/repo/blob/master/LICENSE.txt
+[stars-shield]: https://img.shields.io/github/stars/rgoshen/express-jobly
+[stars-url]: https://github.com/rgoshen/express-jobly/stargazers
+[issues-shield]: https://img.shields.io/github/issues/rgoshen/express-jobly
+[issues-url]: https://github.com/rgoshen/express-jobly/issues
+[license-shield]: https://img.shields.io/github/license/rgoshen/express-jobly
+[license-url]: https://github.com/rgoshen/express-jobly/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/rickgoshen
-[product-screenshot]: images/screenshot.png
