@@ -22,10 +22,10 @@ app.use(express.json());
 app.use(morgan("tiny"));
 app.use(authenticateJWT);
 
-app.use("jobly/v2/auth", authRoutes);
-app.use("jobly/v2/companies", companiesRoutes);
-app.use("jobly/v2/users", usersRoutes);
-app.use("jobly/v2/jobs", jobsRoutes);
+app.use("/auth", authRoutes);
+app.use("/companies", companiesRoutes);
+app.use("/users", usersRoutes);
+app.use("/jobs", jobsRoutes);
 
 /** Handle 404 errors -- this matches everything */
 app.use(function (req, res, next) {
