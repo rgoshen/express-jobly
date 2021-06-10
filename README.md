@@ -58,12 +58,12 @@
 
 This document describes the Jobly Backend API.
 
-### Default endpoints:
+### Endpoint Documentation (click on each link)
 
-- localserver:3001/companies
-- localserver:3001/users
-- localserver:3001/jobs
-- localserver:3001/auth
+- [localserver:3001/companies](https://documenter.getpostman.com/view/11782425/TzeRqqK4)
+- [localserver:3001/users](https://documenter.getpostman.com/view/11782425/TzeRqqK3)
+- [localserver:3001/jobs](https://documenter.getpostman.com/view/11782425/TzeRqqK2)
+- [localserver:3001/auth](https://documenter.getpostman.com/view/11782425/TzeRqqK1#intro)
 
 ### Built With
 
