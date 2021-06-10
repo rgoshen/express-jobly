@@ -40,7 +40,7 @@
 
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
-  - [Default Endpoint](#default-endpoints)
+  - [Endpoint Documentation](#endpoint-documentation)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -58,7 +58,7 @@
 
 This document describes the Jobly Backend API.
 
-### Endpoint Documentation (click on each link)
+### Endpoint Documentation
 
 - [localserver:3001/companies](https://documenter.getpostman.com/view/11782425/TzeRqqK4)
 - [localserver:3001/users](https://documenter.getpostman.com/view/11782425/TzeRqqK3)
