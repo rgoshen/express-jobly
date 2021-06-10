@@ -1,0 +1,456 @@
+{
+	"info": {
+		"_postman_id": "d181e3c7-fbe4-48f0-b8dd-dccf1bc99933",
+		"name": "Jobs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Jobs",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/jobs",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"jobs"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27778"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6c82-y+UuTt3+vXj84n6g3DCumyD7DHM\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 22:13:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jobs\": [\n        {\n            \"id\": 200,\n            \"title\": \"Accommodation manager\",\n            \"salary\": 126000,\n            \"equity\": null,\n            \"companyHandle\": \"mejia-scott-ryan\",\n            \"companyName\": \"Mejia, Scott and Ryan\"\n        },\n        {\n            \"id\": 161,\n            \"title\": \"Accountant, chartered certified\",\n            \"salary\": 86000,\n            \"equity\": \"0.070\",\n            \"companyHandle\": \"boyd-evans\",\n            \"companyName\": \"Boyd-Evans\"\n        },\n        {\n            \"id\": 36,\n            \"title\": \"Accountant, chartered certified\",\n            \"salary\": 175000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"stone-stewart\",\n            \"companyName\": \"Stone-Stewart\"\n        },\n        {\n            \"id\": 86,\n            \"title\": \"Advertising account executive\",\n            \"salary\": 130000,\n            \"equity\": \"0.064\",\n            \"companyHandle\": \"thomas-sons\",\n            \"companyName\": \"Thomas and Sons\"\n        },\n        {\n            \"id\": 50,\n            \"title\": \"Advertising account executive\",\n            \"salary\": null,\n            \"equity\": \"0\",\n            \"companyHandle\": \"thomas-sons\",\n            \"companyName\": \"Thomas and Sons\"\n        },\n        {\n            \"id\": 78,\n            \"title\": \"Aeronautical engineer\",\n            \"salary\": 135000,\n            \"equity\": \"0.078\",\n            \"companyHandle\": \"norman-harvey\",\n            \"companyName\": \"Norman-Harvey\"\n        },\n        {\n            \"id\": 134,\n            \"title\": \"Aeronautical engineer\",\n            \"salary\": 156000,\n            \"equity\": \"0.055\",\n            \"companyHandle\": \"perez-miller\",\n            \"companyName\": \"Perez-Miller\"\n        },\n        {\n            \"id\": 172,\n            \"title\": \"Agricultural consultant\",\n            \"salary\": 67000,\n            \"equity\": null,\n            \"companyHandle\": \"moore-plc\",\n            \"companyName\": \"Moore PLC\"\n        },\n        {\n            \"id\": 89,\n            \"title\": \"Air cabin crew\",\n            \"salary\": 105000,\n            \"equity\": \"0.077\",\n            \"companyHandle\": \"ingram-ferguson-rubio\",\n            \"companyName\": \"Ingram, Ferguson and Rubio\"\n        },\n        {\n            \"id\": 71,\n            \"title\": \"Applications developer\",\n            \"salary\": 84000,\n            \"equity\": \"0.091\",\n            \"companyHandle\": \"sellers-bryant\",\n            \"companyName\": \"Sellers-Bryant\"\n        },\n        {\n            \"id\": 184,\n            \"title\": \"Arboriculturist\",\n            \"salary\": 191000,\n            \"equity\": \"0.062\",\n            \"companyHandle\": \"salas-group\",\n            \"companyName\": \"Salas Group\"\n        },\n        {\n            \"id\": 60,\n            \"title\": \"Architectural technologist\",\n            \"salary\": 57000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"owen-newton\",\n            \"companyName\": \"Owen-Newton\"\n        },\n        {\n            \"id\": 158,\n            \"title\": \"Armed forces technical officer\",\n            \"salary\": 136000,\n            \"equity\": \"0.012\",\n            \"companyHandle\": \"scott-smith\",\n            \"companyName\": \"Scott-Smith\"\n        },\n        {\n            \"id\": 62,\n            \"title\": \"Art gallery manager\",\n            \"salary\": null,\n            \"equity\": \"0.085\",\n            \"companyHandle\": \"anderson-arias-morrow\",\n            \"companyName\": \"Anderson, Arias and Morrow\"\n        },\n        {\n            \"id\": 98,\n            \"title\": \"Art gallery manager\",\n            \"salary\": 73000,\n            \"equity\": \"0.054\",\n            \"companyHandle\": \"perez-miller\",\n            \"companyName\": \"Perez-Miller\"\n        },\n        {\n            \"id\": 181,\n            \"title\": \"Astronomer\",\n            \"salary\": 55000,\n            \"equity\": \"0.074\",\n            \"companyHandle\": \"martinez-daniels\",\n            \"companyName\": \"Martinez-Daniels\"\n        },\n        {\n            \"id\": 47,\n            \"title\": \"Astronomer\",\n            \"salary\": 143000,\n            \"equity\": null,\n            \"companyHandle\": \"watson-davis\",\n            \"companyName\": \"Watson-Davis\"\n        },\n        {\n            \"id\": 29,\n            \"title\": \"Barrister\",\n            \"salary\": 130000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"stone-stewart\",\n            \"companyName\": \"Stone-Stewart\"\n        },\n        {\n            \"id\": 53,\n            \"title\": \"Best boy\",\n            \"salary\": null,\n            \"equity\": \"0\",\n            \"companyHandle\": \"jackson-sons\",\n            \"companyName\": \"Jackson and Sons\"\n        },\n        {\n            \"id\": 69,\n            \"title\": \"Bonds trader\",\n            \"salary\": null,\n            \"equity\": null,\n            \"companyHandle\": \"mitchell-brown\",\n            \"companyName\": \"Mitchell-Brown\"\n        },\n        {\n            \"id\": 193,\n            \"title\": \"Bookseller\",\n            \"salary\": 164000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"reynolds-greene\",\n            \"companyName\": \"Reynolds-Greene\"\n        },\n        {\n            \"id\": 51,\n            \"title\": \"Buyer, industrial\",\n            \"salary\": null,\n            \"equity\": null,\n            \"companyHandle\": \"reynolds-greene\",\n            \"companyName\": \"Reynolds-Greene\"\n        },\n        {\n            \"id\": 150,\n            \"title\": \"Camera operator\",\n            \"salary\": 51000,\n            \"equity\": \"0.066\",\n            \"companyHandle\": \"jackson-davila-conley\",\n            \"companyName\": \"Jackson, Davila and Conley\"\n        },\n        {\n            \"id\": 66,\n            \"title\": \"Camera operator\",\n            \"salary\": 130000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"arnold-berger-townsend\",\n            \"companyName\": \"Arnold, Berger and Townsend\"\n        },\n        {\n            \"id\": 82,\n            \"title\": \"Careers adviser\",\n            \"salary\": 57000,\n            \"equity\": \"0.051\",\n            \"companyHandle\": \"carr-wells-jones\",\n            \"companyName\": \"Carr, Wells and Jones\"\n        },\n        {\n            \"id\": 188,\n            \"title\": \"Chartered loss adjuster\",\n            \"salary\": 72000,\n            \"equity\": \"0.084\",\n            \"companyHandle\": \"davis-davis\",\n            \"companyName\": \"Davis-Davis\"\n        },\n        {\n            \"id\": 177,\n            \"title\": \"Chief Executive Officer\",\n            \"salary\": 83000,\n            \"equity\": null,\n            \"companyHandle\": \"miller-woods-hernandez\",\n            \"companyName\": \"Miller, Woods and Hernandez\"\n        },\n        {\n            \"id\": 183,\n            \"title\": \"Chief Technology Officer\",\n            \"salary\": 64000,\n            \"equity\": \"0.067\",\n            \"companyHandle\": \"robbins-marsh-martin\",\n            \"companyName\": \"Robbins, Marsh and Martin\"\n        },\n        {\n            \"id\": 123,\n            \"title\": \"Chief of Staff\",\n            \"salary\": 110000,\n            \"equity\": \"0.016\",\n            \"companyHandle\": \"scott-smith\",\n            \"companyName\": \"Scott-Smith\"\n        },\n        {\n            \"id\": 175,\n            \"title\": \"Clinical biochemist\",\n            \"salary\": 92000,\n            \"equity\": null,\n            \"companyHandle\": \"norman-harvey\",\n            \"companyName\": \"Norman-Harvey\"\n        },\n        {\n            \"id\": 120,\n            \"title\": \"Clinical cytogeneticist\",\n            \"salary\": 152000,\n            \"equity\": \"0.027\",\n            \"companyHandle\": \"mitchell-brown\",\n            \"companyName\": \"Mitchell-Brown\"\n        },\n        {\n            \"id\": 72,\n            \"title\": \"Clothing/textile technologist\",\n            \"salary\": 171000,\n            \"equity\": \"0.041\",\n            \"companyHandle\": \"smith-llc\",\n            \"companyName\": \"Smith LLC\"\n        },\n        {\n            \"id\": 23,\n            \"title\": \"Colour technologist\",\n            \"salary\": 81000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"burton-ltd\",\n            \"companyName\": \"Burton Ltd\"\n        },\n        {\n            \"id\": 111,\n            \"title\": \"Conservation officer, historic buildings\",\n            \"salary\": 168000,\n            \"equity\": null,\n            \"companyHandle\": \"robbins-marsh-martin\",\n            \"companyName\": \"Robbins, Marsh and Martin\"\n        },\n        {\n            \"id\": 185,\n            \"title\": \"Conservation officer, nature\",\n            \"salary\": 108000,\n            \"equity\": \"0.006\",\n            \"companyHandle\": \"jackson-davila-conley\",\n            \"companyName\": \"Jackson, Davila and Conley\"\n        },\n        {\n            \"id\": 1,\n            \"title\": \"Conservator, furniture\",\n            \"salary\": 110000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"watson-davis\",\n            \"companyName\": \"Watson-Davis\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Consulting civil engineer\",\n            \"salary\": 60000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"sellers-bryant\",\n            \"companyName\": \"Sellers-Bryant\"\n        },\n        {\n            \"id\": 132,\n            \"title\": \"Contractor\",\n            \"salary\": 89000,\n            \"equity\": \"0.065\",\n            \"companyHandle\": \"mueller-moore\",\n            \"companyName\": \"Mueller-Moore\"\n        },\n        {\n            \"id\": 8,\n            \"title\": \"Control and instrumentation engineer\",\n            \"salary\": 171000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"salas-group\",\n            \"companyName\": \"Salas Group\"\n        },\n        {\n            \"id\": 195,\n            \"title\": \"Copy\",\n            \"salary\": 103000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"foster-rice\",\n            \"companyName\": \"Foster-Rice\"\n        },\n        {\n            \"id\": 48,\n            \"title\": \"Counsellor\",\n            \"salary\": null,\n            \"equity\": \"0\",\n            \"companyHandle\": \"owen-newton\",\n            \"companyName\": \"Owen-Newton\"\n        },\n        {\n            \"id\": 31,\n            \"title\": \"Database administrator\",\n            \"salary\": 79000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"willis-henson-miller\",\n            \"companyName\": \"Willis, Henson and Miller\"\n        },\n        {\n            \"id\": 103,\n            \"title\": \"Dealer\",\n            \"salary\": 175000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"hall-mills\",\n            \"companyName\": \"Hall-Mills\"\n        },\n        {\n            \"id\": 96,\n            \"title\": \"Designer, fashion/clothing\",\n            \"salary\": 81000,\n            \"equity\": \"0.026\",\n            \"companyHandle\": \"garcia-ray\",\n            \"companyName\": \"Garcia-Ray\"\n        },\n        {\n            \"id\": 187,\n            \"title\": \"Designer, furniture\",\n            \"salary\": 149000,\n            \"equity\": \"0.041\",\n            \"companyHandle\": \"mueller-moore\",\n            \"companyName\": \"Mueller-Moore\"\n        },\n        {\n            \"id\": 55,\n            \"title\": \"Designer, jewellery\",\n            \"salary\": null,\n            \"equity\": \"0\",\n            \"companyHandle\": \"weber-hernandez\",\n            \"companyName\": \"Weber-Hernandez\"\n        },\n        {\n            \"id\": 79,\n            \"title\": \"Development worker, community\",\n            \"salary\": 192000,\n            \"equity\": \"0.047\",\n            \"companyHandle\": \"weber-hernandez\",\n            \"companyName\": \"Weber-Hernandez\"\n        },\n        {\n            \"id\": 170,\n            \"title\": \"Dietitian\",\n            \"salary\": 198000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"ayala-buchanan\",\n            \"companyName\": \"Ayala-Buchanan\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Early years teacher\",\n            \"salary\": 55000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"perez-miller\",\n            \"companyName\": \"Perez-Miller\"\n        },\n        {\n            \"id\": 138,\n            \"title\": \"Editor, film/video\",\n            \"salary\": 199000,\n            \"equity\": \"0.070\",\n            \"companyHandle\": \"bauer-gallagher\",\n            \"companyName\": \"Bauer-Gallagher\"\n        },\n        {\n            \"id\": 70,\n            \"title\": \"Editor, magazine features\",\n            \"salary\": 118000,\n            \"equity\": \"0.002\",\n            \"companyHandle\": \"foster-rice\",\n            \"companyName\": \"Foster-Rice\"\n        },\n        {\n            \"id\": 171,\n            \"title\": \"Electrical engineer\",\n            \"salary\": 157000,\n            \"equity\": null,\n            \"companyHandle\": \"jackson-davila-conley\",\n            \"companyName\": \"Jackson, Davila and Conley\"\n        },\n        {\n            \"id\": 18,\n            \"title\": \"Embryologist, clinical\",\n            \"salary\": 138000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"anderson-arias-morrow\",\n            \"companyName\": \"Anderson, Arias and Morrow\"\n        },\n        {\n            \"id\": 27,\n            \"title\": \"Energy engineer\",\n            \"salary\": 62000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"norman-harvey\",\n            \"companyName\": \"Norman-Harvey\"\n        },\n        {\n            \"id\": 196,\n            \"title\": \"Engineer, broadcasting (operations)\",\n            \"salary\": 86000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"baker-santos\",\n            \"companyName\": \"Baker-Santos\"\n        },\n        {\n            \"id\": 63,\n            \"title\": \"Engineer, chemical\",\n            \"salary\": 81000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"russo-gillespie-conrad\",\n            \"companyName\": \"Russo, Gillespie and Conrad\"\n        },\n        {\n            \"id\": 114,\n            \"title\": \"Engineer, civil (contracting)\",\n            \"salary\": null,\n            \"equity\": \"0.018\",\n            \"companyHandle\": \"moore-plc\",\n            \"companyName\": \"Moore PLC\"\n        },\n        {\n            \"id\": 117,\n            \"title\": \"Engineer, energy\",\n            \"salary\": null,\n            \"equity\": \"0.048\",\n            \"companyHandle\": \"arnold-berger-townsend\",\n            \"companyName\": \"Arnold, Berger and Townsend\"\n        },\n        {\n            \"id\": 136,\n            \"title\": \"Engineer, materials\",\n            \"salary\": 140000,\n            \"equity\": \"0.057\",\n            \"companyHandle\": \"mitchell-brown\",\n            \"companyName\": \"Mitchell-Brown\"\n        },\n        {\n            \"id\": 75,\n            \"title\": \"Engineer, materials\",\n            \"salary\": 185000,\n            \"equity\": \"0.081\",\n            \"companyHandle\": \"garner-michael\",\n            \"companyName\": \"Garner-Michael\"\n        },\n        {\n            \"id\": 151,\n            \"title\": \"Engineer, technical sales\",\n            \"salary\": 167000,\n            \"equity\": \"0.077\",\n            \"companyHandle\": \"ingram-ferguson-rubio\",\n            \"companyName\": \"Ingram, Ferguson and Rubio\"\n        },\n        {\n            \"id\": 168,\n            \"title\": \"Engineer, technical sales\",\n            \"salary\": 157000,\n            \"equity\": \"0.083\",\n            \"companyHandle\": \"baker-santos\",\n            \"companyName\": \"Baker-Santos\"\n        },\n        {\n            \"id\": 179,\n            \"title\": \"Engineer, water\",\n            \"salary\": 165000,\n            \"equity\": \"0.010\",\n            \"companyHandle\": \"ingram-ferguson-rubio\",\n            \"companyName\": \"Ingram, Ferguson and Rubio\"\n        },\n        {\n            \"id\": 77,\n            \"title\": \"Engineering geologist\",\n            \"salary\": 89000,\n            \"equity\": \"0.043\",\n            \"companyHandle\": \"ayala-buchanan\",\n            \"companyName\": \"Ayala-Buchanan\"\n        },\n        {\n            \"id\": 34,\n            \"title\": \"Engineering geologist\",\n            \"salary\": 170000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"garcia-ray\",\n            \"companyName\": \"Garcia-Ray\"\n        },\n        {\n            \"id\": 11,\n            \"title\": \"English as a foreign language teacher\",\n            \"salary\": 111000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"russo-gillespie-conrad\",\n            \"companyName\": \"Russo, Gillespie and Conrad\"\n        },\n        {\n            \"id\": 58,\n            \"title\": \"Ergonomist\",\n            \"salary\": 160000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"bauer-gallagher\",\n            \"companyName\": \"Bauer-Gallagher\"\n        },\n        {\n            \"id\": 154,\n            \"title\": \"Estate manager/land agent\",\n            \"salary\": 94000,\n            \"equity\": \"0.008\",\n            \"companyHandle\": \"jackson-davila-conley\",\n            \"companyName\": \"Jackson, Davila and Conley\"\n        },\n        {\n            \"id\": 144,\n            \"title\": \"Farm manager\",\n            \"salary\": 138000,\n            \"equity\": \"0.085\",\n            \"companyHandle\": \"stone-stewart\",\n            \"companyName\": \"Stone-Stewart\"\n        },\n        {\n            \"id\": 149,\n            \"title\": \"Farm manager\",\n            \"salary\": 68000,\n            \"equity\": \"0.049\",\n            \"companyHandle\": \"morgan-sullivan\",\n            \"companyName\": \"Morgan-Sullivan\"\n        },\n        {\n            \"id\": 197,\n            \"title\": \"Fashion designer\",\n            \"salary\": 137000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"reynolds-greene\",\n            \"companyName\": \"Reynolds-Greene\"\n        },\n        {\n            \"id\": 139,\n            \"title\": \"Fashion designer\",\n            \"salary\": 131000,\n            \"equity\": \"0.080\",\n            \"companyHandle\": \"taylor-yu-lee\",\n            \"companyName\": \"Taylor, Yu and Lee\"\n        },\n        {\n            \"id\": 74,\n            \"title\": \"Field seismologist\",\n            \"salary\": 62000,\n            \"equity\": \"0.064\",\n            \"companyHandle\": \"martinez-daniels\",\n            \"companyName\": \"Martinez-Daniels\"\n        },\n        {\n            \"id\": 67,\n            \"title\": \"Field trials officer\",\n            \"salary\": 137000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"davis-davis\",\n            \"companyName\": \"Davis-Davis\"\n        },\n        {\n            \"id\": 49,\n            \"title\": \"Financial controller\",\n            \"salary\": null,\n            \"equity\": \"0\",\n            \"companyHandle\": \"sellers-bryant\",\n            \"companyName\": \"Sellers-Bryant\"\n        },\n        {\n            \"id\": 14,\n            \"title\": \"Financial planner\",\n            \"salary\": 115000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"taylor-yu-lee\",\n            \"companyName\": \"Taylor, Yu and Lee\"\n        },\n        {\n            \"id\": 141,\n            \"title\": \"Financial risk analyst\",\n            \"salary\": 72000,\n            \"equity\": \"0.001\",\n            \"companyHandle\": \"scott-smith\",\n            \"companyName\": \"Scott-Smith\"\n        },\n        {\n            \"id\": 90,\n            \"title\": \"Financial trader\",\n            \"salary\": 153000,\n            \"equity\": \"0.012\",\n            \"companyHandle\": \"garner-michael\",\n            \"companyName\": \"Garner-Michael\"\n        },\n        {\n            \"id\": 88,\n            \"title\": \"Fisheries officer\",\n            \"salary\": 67000,\n            \"equity\": \"0.062\",\n            \"companyHandle\": \"hall-davis\",\n            \"companyName\": \"Hall-Davis\"\n        },\n        {\n            \"id\": 84,\n            \"title\": \"Forest/woodland manager\",\n            \"salary\": 156000,\n            \"equity\": \"0.030\",\n            \"companyHandle\": \"carr-wells-jones\",\n            \"companyName\": \"Carr, Wells and Jones\"\n        },\n        {\n            \"id\": 54,\n            \"title\": \"Freight forwarder\",\n            \"salary\": 183000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"hudson-inc\",\n            \"companyName\": \"Hudson Inc\"\n        },\n        {\n            \"id\": 135,\n            \"title\": \"Freight forwarder\",\n            \"salary\": 183000,\n            \"equity\": \"0.093\",\n            \"companyHandle\": \"burton-ltd\",\n            \"companyName\": \"Burton Ltd\"\n        },\n        {\n            \"id\": 173,\n            \"title\": \"Geochemist\",\n            \"salary\": 104000,\n            \"equity\": null,\n            \"companyHandle\": \"hudson-inc\",\n            \"companyName\": \"Hudson Inc\"\n        },\n        {\n            \"id\": 128,\n            \"title\": \"Geochemist\",\n            \"salary\": 130000,\n            \"equity\": \"0.004\",\n            \"companyHandle\": \"smith-llc\",\n            \"companyName\": \"Smith LLC\"\n        },\n        {\n            \"id\": 174,\n            \"title\": \"Geologist, engineering\",\n            \"salary\": 116000,\n            \"equity\": null,\n            \"companyHandle\": \"jackson-davila-conley\",\n            \"companyName\": \"Jackson, Davila and Conley\"\n        },\n        {\n            \"id\": 163,\n            \"title\": \"Glass blower/designer\",\n            \"salary\": 60000,\n            \"equity\": \"0.095\",\n            \"companyHandle\": \"mueller-moore\",\n            \"companyName\": \"Mueller-Moore\"\n        },\n        {\n            \"id\": 127,\n            \"title\": \"Glass blower/designer\",\n            \"salary\": 126000,\n            \"equity\": \"0.099\",\n            \"companyHandle\": \"anderson-arias-morrow\",\n            \"companyName\": \"Anderson, Arias and Morrow\"\n        },\n        {\n            \"id\": 85,\n            \"title\": \"Haematologist\",\n            \"salary\": 63000,\n            \"equity\": \"0.062\",\n            \"companyHandle\": \"ayala-buchanan\",\n            \"companyName\": \"Ayala-Buchanan\"\n        },\n        {\n            \"id\": 81,\n            \"title\": \"Health promotion specialist\",\n            \"salary\": 72000,\n            \"equity\": \"0.010\",\n            \"companyHandle\": \"burton-ltd\",\n            \"companyName\": \"Burton Ltd\"\n        },\n        {\n            \"id\": 92,\n            \"title\": \"Historic buildings inspector/conservation officer\",\n            \"salary\": 129000,\n            \"equity\": \"0.052\",\n            \"companyHandle\": \"watson-davis\",\n            \"companyName\": \"Watson-Davis\"\n        },\n        {\n            \"id\": 108,\n            \"title\": \"Historic buildings inspector/conservation officer\",\n            \"salary\": 135000,\n            \"equity\": null,\n            \"companyHandle\": \"rivas-llc\",\n            \"companyName\": \"Rivas LLC\"\n        },\n        {\n            \"id\": 130,\n            \"title\": \"Historic buildings inspector/conservation officer\",\n            \"salary\": 65000,\n            \"equity\": \"0.075\",\n            \"companyHandle\": \"mejia-scott-ryan\",\n            \"companyName\": \"Mejia, Scott and Ryan\"\n        },\n        {\n            \"id\": 133,\n            \"title\": \"Hydrologist\",\n            \"salary\": 50000,\n            \"equity\": \"0.097\",\n            \"companyHandle\": \"wiggins-frederick-boyer\",\n            \"companyName\": \"Wiggins, Frederick and Boyer\"\n        },\n        {\n            \"id\": 32,\n            \"title\": \"IT consultant\",\n            \"salary\": 59000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"gillespie-smith\",\n            \"companyName\": \"Gillespie-Smith\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Information officer\",\n            \"salary\": 200000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"hall-mills\",\n            \"companyName\": \"Hall-Mills\"\n        },\n        {\n            \"id\": 97,\n            \"title\": \"Information systems manager\",\n            \"salary\": 123000,\n            \"equity\": \"0.100\",\n            \"companyHandle\": \"arnold-berger-townsend\",\n            \"companyName\": \"Arnold, Berger and Townsend\"\n        },\n        {\n            \"id\": 122,\n            \"title\": \"Insurance underwriter\",\n            \"salary\": null,\n            \"equity\": \"0.008\",\n            \"companyHandle\": \"hall-davis\",\n            \"companyName\": \"Hall-Davis\"\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Intelligence analyst\",\n            \"salary\": 77000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"garner-michael\",\n            \"companyName\": \"Garner-Michael\"\n        },\n        {\n            \"id\": 101,\n            \"title\": \"Intelligence analyst\",\n            \"salary\": 148000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"sellers-bryant\",\n            \"companyName\": \"Sellers-Bryant\"\n        },\n        {\n            \"id\": 21,\n            \"title\": \"Interior and spatial designer\",\n            \"salary\": 177000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"gillespie-smith\",\n            \"companyName\": \"Gillespie-Smith\"\n        },\n        {\n            \"id\": 52,\n            \"title\": \"Interpreter\",\n            \"salary\": 55000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"hudson-inc\",\n            \"companyName\": \"Hudson Inc\"\n        },\n        {\n            \"id\": 110,\n            \"title\": \"Investment banker, corporate\",\n            \"salary\": 131000,\n            \"equity\": null,\n            \"companyHandle\": \"ingram-ferguson-rubio\",\n            \"companyName\": \"Ingram, Ferguson and Rubio\"\n        },\n        {\n            \"id\": 153,\n            \"title\": \"Lawyer\",\n            \"salary\": 162000,\n            \"equity\": \"0.072\",\n            \"companyHandle\": \"hall-mills\",\n            \"companyName\": \"Hall-Mills\"\n        },\n        {\n            \"id\": 198,\n            \"title\": \"Learning disability nurse\",\n            \"salary\": 66000,\n            \"equity\": null,\n            \"companyHandle\": \"ayala-buchanan\",\n            \"companyName\": \"Ayala-Buchanan\"\n        },\n        {\n            \"id\": 140,\n            \"title\": \"Legal secretary\",\n            \"salary\": 155000,\n            \"equity\": \"0.080\",\n            \"companyHandle\": \"pugh-ltd\",\n            \"companyName\": \"Pugh Ltd\"\n        },\n        {\n            \"id\": 106,\n            \"title\": \"Leisure centre manager\",\n            \"salary\": 135000,\n            \"equity\": null,\n            \"companyHandle\": \"edwards-lee-reese\",\n            \"companyName\": \"Edwards, Lee and Reese\"\n        },\n        {\n            \"id\": 30,\n            \"title\": \"Loss adjuster, chartered\",\n            \"salary\": 76000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"bauer-gallagher\",\n            \"companyName\": \"Bauer-Gallagher\"\n        },\n        {\n            \"id\": 57,\n            \"title\": \"Management consultant\",\n            \"salary\": 183000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"edwards-lee-reese\",\n            \"companyName\": \"Edwards, Lee and Reese\"\n        },\n        {\n            \"id\": 19,\n            \"title\": \"Marine scientist\",\n            \"salary\": 54000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"scott-smith\",\n            \"companyName\": \"Scott-Smith\"\n        },\n        {\n            \"id\": 38,\n            \"title\": \"Medical physicist\",\n            \"salary\": 84000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"perez-miller\",\n            \"companyName\": \"Perez-Miller\"\n        },\n        {\n            \"id\": 182,\n            \"title\": \"Medical physicist\",\n            \"salary\": 110000,\n            \"equity\": \"0.015\",\n            \"companyHandle\": \"mitchell-brown\",\n            \"companyName\": \"Mitchell-Brown\"\n        },\n        {\n            \"id\": 26,\n            \"title\": \"Medical sales representative\",\n            \"salary\": 125000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"jackson-davila-conley\",\n            \"companyName\": \"Jackson, Davila and Conley\"\n        },\n        {\n            \"id\": 194,\n            \"title\": \"Medical sales representative\",\n            \"salary\": 196000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"hall-mills\",\n            \"companyName\": \"Hall-Mills\"\n        },\n        {\n            \"id\": 37,\n            \"title\": \"Merchant navy officer\",\n            \"salary\": 106000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"mitchell-brown\",\n            \"companyName\": \"Mitchell-Brown\"\n        },\n        {\n            \"id\": 166,\n            \"title\": \"Meteorologist\",\n            \"salary\": 81000,\n            \"equity\": \"0.037\",\n            \"companyHandle\": \"sellers-bryant\",\n            \"companyName\": \"Sellers-Bryant\"\n        },\n        {\n            \"id\": 104,\n            \"title\": \"Multimedia programmer\",\n            \"salary\": 154000,\n            \"equity\": null,\n            \"companyHandle\": \"owen-newton\",\n            \"companyName\": \"Owen-Newton\"\n        },\n        {\n            \"id\": 10,\n            \"title\": \"Multimedia programmer\",\n            \"salary\": 192000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"graham-herring-lane\",\n            \"companyName\": \"Graham, Herring and Lane\"\n        },\n        {\n            \"id\": 33,\n            \"title\": \"Museum/gallery conservator\",\n            \"salary\": 82000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"mejia-scott-ryan\",\n            \"companyName\": \"Mejia, Scott and Ryan\"\n        },\n        {\n            \"id\": 148,\n            \"title\": \"Music therapist\",\n            \"salary\": 100000,\n            \"equity\": \"0.058\",\n            \"companyHandle\": \"taylor-yu-lee\",\n            \"companyName\": \"Taylor, Yu and Lee\"\n        },\n        {\n            \"id\": 121,\n            \"title\": \"Nature conservation officer\",\n            \"salary\": 82000,\n            \"equity\": \"0.093\",\n            \"companyHandle\": \"watson-davis\",\n            \"companyName\": \"Watson-Davis\"\n        },\n        {\n            \"id\": 102,\n            \"title\": \"Naval architect\",\n            \"salary\": 126000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"scott-smith\",\n            \"companyName\": \"Scott-Smith\"\n        },\n        {\n            \"id\": 201,\n            \"title\": \"New Job Title\",\n            \"salary\": 0,\n            \"equity\": \"0.0\",\n            \"companyHandle\": \"bauer-gallagher\",\n            \"companyName\": \"Bauer-Gallagher\"\n        },\n        {\n            \"id\": 40,\n            \"title\": \"Nurse, children's\",\n            \"salary\": 162000,\n            \"equity\": null,\n            \"companyHandle\": \"humphrey-llc\",\n            \"companyName\": \"Humphrey LLC\"\n        },\n        {\n            \"id\": 42,\n            \"title\": \"Occupational hygienist\",\n            \"salary\": 79000,\n            \"equity\": null,\n            \"companyHandle\": \"reynolds-greene\",\n            \"companyName\": \"Reynolds-Greene\"\n        },\n        {\n            \"id\": 16,\n            \"title\": \"Occupational therapist\",\n            \"salary\": 183000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"garcia-ray\",\n            \"companyName\": \"Garcia-Ray\"\n        },\n        {\n            \"id\": 119,\n            \"title\": \"Oceanographer\",\n            \"salary\": null,\n            \"equity\": \"0.097\",\n            \"companyHandle\": \"anderson-arias-morrow\",\n            \"companyName\": \"Anderson, Arias and Morrow\"\n        },\n        {\n            \"id\": 190,\n            \"title\": \"Operational investment banker\",\n            \"salary\": 200000,\n            \"equity\": \"0.022\",\n            \"companyHandle\": \"smith-llc\",\n            \"companyName\": \"Smith LLC\"\n        },\n        {\n            \"id\": 99,\n            \"title\": \"Operational researcher\",\n            \"salary\": 167000,\n            \"equity\": \"0.020\",\n            \"companyHandle\": \"ayala-buchanan\",\n            \"companyName\": \"Ayala-Buchanan\"\n        },\n        {\n            \"id\": 17,\n            \"title\": \"Ophthalmologist\",\n            \"salary\": 135000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"hall-mills\",\n            \"companyName\": \"Hall-Mills\"\n        },\n        {\n            \"id\": 65,\n            \"title\": \"Orthoptist\",\n            \"salary\": 200000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"perez-miller\",\n            \"companyName\": \"Perez-Miller\"\n        },\n        {\n            \"id\": 155,\n            \"title\": \"Orthoptist\",\n            \"salary\": 129000,\n            \"equity\": \"0.062\",\n            \"companyHandle\": \"willis-henson-miller\",\n            \"companyName\": \"Willis, Henson and Miller\"\n        },\n        {\n            \"id\": 91,\n            \"title\": \"Paramedic\",\n            \"salary\": 122000,\n            \"equity\": \"0.047\",\n            \"companyHandle\": \"baker-santos\",\n            \"companyName\": \"Baker-Santos\"\n        },\n        {\n            \"id\": 12,\n            \"title\": \"Passenger transport manager\",\n            \"salary\": 70000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"rivas-llc\",\n            \"companyName\": \"Rivas LLC\"\n        },\n        {\n            \"id\": 61,\n            \"title\": \"Patent attorney\",\n            \"salary\": 143000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"foster-rice\",\n            \"companyName\": \"Foster-Rice\"\n        },\n        {\n            \"id\": 25,\n            \"title\": \"Pharmacist, hospital\",\n            \"salary\": 194000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"boyd-evans\",\n            \"companyName\": \"Boyd-Evans\"\n        },\n        {\n            \"id\": 9,\n            \"title\": \"Photographer\",\n            \"salary\": 198000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"davis-davis\",\n            \"companyName\": \"Davis-Davis\"\n        },\n        {\n            \"id\": 112,\n            \"title\": \"Physicist, medical\",\n            \"salary\": 190000,\n            \"equity\": null,\n            \"companyHandle\": \"humphrey-llc\",\n            \"companyName\": \"Humphrey LLC\"\n        },\n        {\n            \"id\": 118,\n            \"title\": \"Plant breeder/geneticist\",\n            \"salary\": null,\n            \"equity\": \"0.081\",\n            \"companyHandle\": \"thomas-sons\",\n            \"companyName\": \"Thomas and Sons\"\n        },\n        {\n            \"id\": 39,\n            \"title\": \"Podiatrist\",\n            \"salary\": 68000,\n            \"equity\": null,\n            \"companyHandle\": \"reynolds-greene\",\n            \"companyName\": \"Reynolds-Greene\"\n        },\n        {\n            \"id\": 113,\n            \"title\": \"Press sub\",\n            \"salary\": 100000,\n            \"equity\": null,\n            \"companyHandle\": \"erickson-inc\",\n            \"companyName\": \"Erickson Inc\"\n        },\n        {\n            \"id\": 145,\n            \"title\": \"Primary school teacher\",\n            \"salary\": 142000,\n            \"equity\": \"0.036\",\n            \"companyHandle\": \"moore-plc\",\n            \"companyName\": \"Moore PLC\"\n        },\n        {\n            \"id\": 164,\n            \"title\": \"Print production planner\",\n            \"salary\": 197000,\n            \"equity\": \"0.095\",\n            \"companyHandle\": \"humphrey-llc\",\n            \"companyName\": \"Humphrey LLC\"\n        },\n        {\n            \"id\": 176,\n            \"title\": \"Probation officer\",\n            \"salary\": 128000,\n            \"equity\": null,\n            \"companyHandle\": \"foster-rice\",\n            \"companyName\": \"Foster-Rice\"\n        },\n        {\n            \"id\": 189,\n            \"title\": \"Producer, radio\",\n            \"salary\": 168000,\n            \"equity\": \"0.010\",\n            \"companyHandle\": \"salas-group\",\n            \"companyName\": \"Salas Group\"\n        },\n        {\n            \"id\": 137,\n            \"title\": \"Product designer\",\n            \"salary\": 184000,\n            \"equity\": \"0.090\",\n            \"companyHandle\": \"gillespie-smith\",\n            \"companyName\": \"Gillespie-Smith\"\n        },\n        {\n            \"id\": 13,\n            \"title\": \"Psychologist, clinical\",\n            \"salary\": 172000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"hudson-inc\",\n            \"companyName\": \"Hudson Inc\"\n        },\n        {\n            \"id\": 180,\n            \"title\": \"Psychologist, counselling\",\n            \"salary\": 111000,\n            \"equity\": \"0.059\",\n            \"companyHandle\": \"taylor-yu-lee\",\n            \"companyName\": \"Taylor, Yu and Lee\"\n        },\n        {\n            \"id\": 165,\n            \"title\": \"Psychologist, counselling\",\n            \"salary\": 180000,\n            \"equity\": \"0.008\",\n            \"companyHandle\": \"perez-miller\",\n            \"companyName\": \"Perez-Miller\"\n        },\n        {\n            \"id\": 59,\n            \"title\": \"Psychologist, forensic\",\n            \"salary\": 176000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"boyd-evans\",\n            \"companyName\": \"Boyd-Evans\"\n        },\n        {\n            \"id\": 105,\n            \"title\": \"Psychologist, occupational\",\n            \"salary\": 190000,\n            \"equity\": null,\n            \"companyHandle\": \"robbins-marsh-martin\",\n            \"companyName\": \"Robbins, Marsh and Martin\"\n        },\n        {\n            \"id\": 186,\n            \"title\": \"Psychologist, sport and exercise\",\n            \"salary\": 172000,\n            \"equity\": \"0.061\",\n            \"companyHandle\": \"ayala-buchanan\",\n            \"companyName\": \"Ayala-Buchanan\"\n        },\n        {\n            \"id\": 94,\n            \"title\": \"Public librarian\",\n            \"salary\": 115000,\n            \"equity\": \"0.099\",\n            \"companyHandle\": \"norman-harvey\",\n            \"companyName\": \"Norman-Harvey\"\n        },\n        {\n            \"id\": 159,\n            \"title\": \"Public relations officer\",\n            \"salary\": 112000,\n            \"equity\": \"0.087\",\n            \"companyHandle\": \"weber-hernandez\",\n            \"companyName\": \"Weber-Hernandez\"\n        },\n        {\n            \"id\": 146,\n            \"title\": \"Quality manager\",\n            \"salary\": 138000,\n            \"equity\": \"0.002\",\n            \"companyHandle\": \"russo-gillespie-conrad\",\n            \"companyName\": \"Russo, Gillespie and Conrad\"\n        },\n        {\n            \"id\": 76,\n            \"title\": \"Race relations officer\",\n            \"salary\": 97000,\n            \"equity\": \"0.065\",\n            \"companyHandle\": \"bauer-gallagher\",\n            \"companyName\": \"Bauer-Gallagher\"\n        },\n        {\n            \"id\": 147,\n            \"title\": \"Radio producer\",\n            \"salary\": 99000,\n            \"equity\": \"0.038\",\n            \"companyHandle\": \"mitchell-brown\",\n            \"companyName\": \"Mitchell-Brown\"\n        },\n        {\n            \"id\": 143,\n            \"title\": \"Ranger/warden\",\n            \"salary\": 86000,\n            \"equity\": \"0.095\",\n            \"companyHandle\": \"ayala-buchanan\",\n            \"companyName\": \"Ayala-Buchanan\"\n        },\n        {\n            \"id\": 152,\n            \"title\": \"Ranger/warden\",\n            \"salary\": 145000,\n            \"equity\": \"0.046\",\n            \"companyHandle\": \"jackson-davila-conley\",\n            \"companyName\": \"Jackson, Davila and Conley\"\n        },\n        {\n            \"id\": 156,\n            \"title\": \"Recycling officer\",\n            \"salary\": 57000,\n            \"equity\": \"0.098\",\n            \"companyHandle\": \"carr-wells-jones\",\n            \"companyName\": \"Carr, Wells and Jones\"\n        },\n        {\n            \"id\": 142,\n            \"title\": \"Regulatory affairs officer\",\n            \"salary\": 96000,\n            \"equity\": \"0.061\",\n            \"companyHandle\": \"logan-miller\",\n            \"companyName\": \"Logan-Miller\"\n        },\n        {\n            \"id\": 28,\n            \"title\": \"Research officer, government\",\n            \"salary\": 167000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"mejia-scott-ryan\",\n            \"companyName\": \"Mejia, Scott and Ryan\"\n        },\n        {\n            \"id\": 43,\n            \"title\": \"Research officer, political party\",\n            \"salary\": 134000,\n            \"equity\": null,\n            \"companyHandle\": \"garner-michael\",\n            \"companyName\": \"Garner-Michael\"\n        },\n        {\n            \"id\": 199,\n            \"title\": \"Research scientist (medical)\",\n            \"salary\": 175000,\n            \"equity\": null,\n            \"companyHandle\": \"norman-harvey\",\n            \"companyName\": \"Norman-Harvey\"\n        },\n        {\n            \"id\": 169,\n            \"title\": \"Scientist, audiological\",\n            \"salary\": 61000,\n            \"equity\": \"0.095\",\n            \"companyHandle\": \"foster-rice\",\n            \"companyName\": \"Foster-Rice\"\n        },\n        {\n            \"id\": 15,\n            \"title\": \"Scientist, forensic\",\n            \"salary\": 50000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"foster-rice\",\n            \"companyName\": \"Foster-Rice\"\n        },\n        {\n            \"id\": 46,\n            \"title\": \"Scientist, product/process development\",\n            \"salary\": 106000,\n            \"equity\": null,\n            \"companyHandle\": \"scott-smith\",\n            \"companyName\": \"Scott-Smith\"\n        },\n        {\n            \"id\": 157,\n            \"title\": \"Scientist, research (life sciences)\",\n            \"salary\": 157000,\n            \"equity\": \"0.057\",\n            \"companyHandle\": \"ayala-buchanan\",\n            \"companyName\": \"Ayala-Buchanan\"\n        },\n        {\n            \"id\": 129,\n            \"title\": \"Scientist, research (physical sciences)\",\n            \"salary\": 117000,\n            \"equity\": \"0.090\",\n            \"companyHandle\": \"ayala-buchanan\",\n            \"companyName\": \"Ayala-Buchanan\"\n        },\n        {\n            \"id\": 73,\n            \"title\": \"Secretary/administrator\",\n            \"salary\": 172000,\n            \"equity\": \"0.096\",\n            \"companyHandle\": \"jackson-sons\",\n            \"companyName\": \"Jackson and Sons\"\n        },\n        {\n            \"id\": 160,\n            \"title\": \"Set designer\",\n            \"salary\": 132000,\n            \"equity\": \"0.055\",\n            \"companyHandle\": \"russo-gillespie-conrad\",\n            \"companyName\": \"Russo, Gillespie and Conrad\"\n        },\n        {\n            \"id\": 87,\n            \"title\": \"Ship broker\",\n            \"salary\": 124000,\n            \"equity\": \"0.045\",\n            \"companyHandle\": \"davis-davis\",\n            \"companyName\": \"Davis-Davis\"\n        },\n        {\n            \"id\": 192,\n            \"title\": \"Ship broker\",\n            \"salary\": 177000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"hall-davis\",\n            \"companyName\": \"Hall-Davis\"\n        },\n        {\n            \"id\": 100,\n            \"title\": \"Solicitor\",\n            \"salary\": 131000,\n            \"equity\": \"0.034\",\n            \"companyHandle\": \"wiggins-frederick-boyer\",\n            \"companyName\": \"Wiggins, Frederick and Boyer\"\n        },\n        {\n            \"id\": 162,\n            \"title\": \"Special effects artist\",\n            \"salary\": 101000,\n            \"equity\": \"0.023\",\n            \"companyHandle\": \"willis-henson-miller\",\n            \"companyName\": \"Willis, Henson and Miller\"\n        },\n        {\n            \"id\": 80,\n            \"title\": \"Speech and language therapist\",\n            \"salary\": 154000,\n            \"equity\": \"0.014\",\n            \"companyHandle\": \"humphrey-llc\",\n            \"companyName\": \"Humphrey LLC\"\n        },\n        {\n            \"id\": 64,\n            \"title\": \"Speech and language therapist\",\n            \"salary\": 159000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"gillespie-smith\",\n            \"companyName\": \"Gillespie-Smith\"\n        },\n        {\n            \"id\": 109,\n            \"title\": \"Sports development officer\",\n            \"salary\": 102000,\n            \"equity\": null,\n            \"companyHandle\": \"scott-smith\",\n            \"companyName\": \"Scott-Smith\"\n        },\n        {\n            \"id\": 178,\n            \"title\": \"Surveyor, building\",\n            \"salary\": 144000,\n            \"equity\": \"0.007\",\n            \"companyHandle\": \"salas-group\",\n            \"companyName\": \"Salas Group\"\n        },\n        {\n            \"id\": 6,\n            \"title\": \"Surveyor, building\",\n            \"salary\": 144000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"russo-gillespie-conrad\",\n            \"companyName\": \"Russo, Gillespie and Conrad\"\n        },\n        {\n            \"id\": 125,\n            \"title\": \"Surveyor, building control\",\n            \"salary\": null,\n            \"equity\": null,\n            \"companyHandle\": \"reynolds-greene\",\n            \"companyName\": \"Reynolds-Greene\"\n        },\n        {\n            \"id\": 124,\n            \"title\": \"Surveyor, insurance\",\n            \"salary\": null,\n            \"equity\": \"0.066\",\n            \"companyHandle\": \"foster-rice\",\n            \"companyName\": \"Foster-Rice\"\n        },\n        {\n            \"id\": 131,\n            \"title\": \"Surveyor, insurance\",\n            \"salary\": 130000,\n            \"equity\": \"0.009\",\n            \"companyHandle\": \"martinez-daniels\",\n            \"companyName\": \"Martinez-Daniels\"\n        },\n        {\n            \"id\": 83,\n            \"title\": \"Surveyor, minerals\",\n            \"salary\": 98000,\n            \"equity\": \"0.037\",\n            \"companyHandle\": \"carr-wells-jones\",\n            \"companyName\": \"Carr, Wells and Jones\"\n        },\n        {\n            \"id\": 191,\n            \"title\": \"Surveyor, quantity\",\n            \"salary\": 72000,\n            \"equity\": \"0.071\",\n            \"companyHandle\": \"mejia-scott-ryan\",\n            \"companyName\": \"Mejia, Scott and Ryan\"\n        },\n        {\n            \"id\": 22,\n            \"title\": \"Surveyor, rural practice\",\n            \"salary\": 193000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"weber-hernandez\",\n            \"companyName\": \"Weber-Hernandez\"\n        },\n        {\n            \"id\": 41,\n            \"title\": \"Teacher, music\",\n            \"salary\": 127000,\n            \"equity\": null,\n            \"companyHandle\": \"ingram-ferguson-rubio\",\n            \"companyName\": \"Ingram, Ferguson and Rubio\"\n        },\n        {\n            \"id\": 45,\n            \"title\": \"Teacher, secondary school\",\n            \"salary\": 127000,\n            \"equity\": null,\n            \"companyHandle\": \"sellers-bryant\",\n            \"companyName\": \"Sellers-Bryant\"\n        },\n        {\n            \"id\": 24,\n            \"title\": \"Technical brewer\",\n            \"salary\": 77000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"thomas-sons\",\n            \"companyName\": \"Thomas and Sons\"\n        },\n        {\n            \"id\": 7,\n            \"title\": \"Technical brewer\",\n            \"salary\": 157000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"anderson-arias-morrow\",\n            \"companyName\": \"Anderson, Arias and Morrow\"\n        },\n        {\n            \"id\": 107,\n            \"title\": \"Television production assistant\",\n            \"salary\": 99000,\n            \"equity\": null,\n            \"companyHandle\": \"edwards-lee-reese\",\n            \"companyName\": \"Edwards, Lee and Reese\"\n        },\n        {\n            \"id\": 35,\n            \"title\": \"Television production assistant\",\n            \"salary\": 125000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"logan-miller\",\n            \"companyName\": \"Logan-Miller\"\n        },\n        {\n            \"id\": 167,\n            \"title\": \"Therapist, drama\",\n            \"salary\": 200000,\n            \"equity\": \"0.095\",\n            \"companyHandle\": \"hall-mills\",\n            \"companyName\": \"Hall-Mills\"\n        },\n        {\n            \"id\": 115,\n            \"title\": \"Therapist, music\",\n            \"salary\": 103000,\n            \"equity\": \"0.087\",\n            \"companyHandle\": \"reynolds-greene\",\n            \"companyName\": \"Reynolds-Greene\"\n        },\n        {\n            \"id\": 44,\n            \"title\": \"Therapist, occupational\",\n            \"salary\": 82000,\n            \"equity\": null,\n            \"companyHandle\": \"mejia-scott-ryan\",\n            \"companyName\": \"Mejia, Scott and Ryan\"\n        },\n        {\n            \"id\": 20,\n            \"title\": \"Tourist information centre manager\",\n            \"salary\": 88000,\n            \"equity\": \"0\",\n            \"companyHandle\": \"foster-rice\",\n            \"companyName\": \"Foster-Rice\"\n        },\n        {\n            \"id\": 126,\n            \"title\": \"Trade mark attorney\",\n            \"salary\": null,\n            \"equity\": null,\n            \"companyHandle\": \"mueller-moore\",\n            \"companyName\": \"Mueller-Moore\"\n        },\n        {\n            \"id\": 93,\n            \"title\": \"Transport planner\",\n            \"salary\": 123000,\n            \"equity\": \"0.091\",\n            \"companyHandle\": \"hudson-inc\",\n            \"companyName\": \"Hudson Inc\"\n        },\n        {\n            \"id\": 68,\n            \"title\": \"Transport planner\",\n            \"salary\": null,\n            \"equity\": null,\n            \"companyHandle\": \"reynolds-greene\",\n            \"companyName\": \"Reynolds-Greene\"\n        },\n        {\n            \"id\": 56,\n            \"title\": \"Tree surgeon\",\n            \"salary\": null,\n            \"equity\": \"0.001\",\n            \"companyHandle\": \"hall-davis\",\n            \"companyName\": \"Hall-Davis\"\n        },\n        {\n            \"id\": 116,\n            \"title\": \"Water engineer\",\n            \"salary\": null,\n            \"equity\": \"0.028\",\n            \"companyHandle\": \"mejia-scott-ryan\",\n            \"companyName\": \"Mejia, Scott and Ryan\"\n        },\n        {\n            \"id\": 95,\n            \"title\": \"Writer\",\n            \"salary\": 172000,\n            \"equity\": \"0.091\",\n            \"companyHandle\": \"anderson-arias-morrow\",\n            \"companyName\": \"Anderson, Arias and Morrow\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Job by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/jobs/201",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"jobs",
+						"201"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Job by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/jobs/201",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"jobs",
+								"201"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "237"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ed-YRnFxODvwB2cc5rimM4sDWx3YDs\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 22:15:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"job\": {\n        \"id\": 201,\n        \"title\": \"New Job Title\",\n        \"salary\": 0,\n        \"equity\": \"0.0\",\n        \"company\": {\n            \"handle\": \"bauer-gallagher\",\n            \"name\": \"Bauer-Gallagher\",\n            \"description\": \"Difficult ready trip question produce produce someone.\",\n            \"numEmployees\": 862,\n            \"logoUrl\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create New Job",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15VGVzdFVzZXIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MjMzNjEwODh9.LnTB3GguCbCE5gJZSUgiqqW8yC61YRj5dWITYnrcmCs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"companyHandle\": \"bauer-gallagher\",\n    \"title\": \"New Job Title\",\n    \"salary\": 0,\n    \"equity\":\"0.0\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create New Job",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"companyHandle\": \"bauer-gallagher\",\n    \"title\": \"New Job Title\",\n    \"salary\": 0,\n    \"equity\":\"0.0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/jobs",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"jobs"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "102"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"66-FfCVRW9QGJe5NYMbMdc+A4rBRGI\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 22:12:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"job\": {\n        \"id\": 201,\n        \"title\": \"New Job Title\",\n        \"salary\": 0,\n        \"equity\": \"0.0\",\n        \"companyHandle\": \"bauer-gallagher\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Job",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15VGVzdFVzZXIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MjMzNjEwODh9.LnTB3GguCbCE5gJZSUgiqqW8yC61YRj5dWITYnrcmCs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"New Job Title\",\n    \"salary\": 50\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/jobs/201",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"jobs",
+						"201"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Job",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"New Job Title\",\n    \"salary\": 50\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/jobs/201",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"jobs",
+								"201"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "103"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"67-v7LThsvkifJT66sse7ctec6lAo0\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 22:27:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"job\": {\n        \"id\": 201,\n        \"title\": \"New Job Title\",\n        \"salary\": 50,\n        \"equity\": \"0.0\",\n        \"companyHandle\": \"bauer-gallagher\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Job",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15VGVzdFVzZXIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MjMzNjEwODh9.LnTB3GguCbCE5gJZSUgiqqW8yC61YRj5dWITYnrcmCs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/jobs/201",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"jobs",
+						"201"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Job",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/jobs/201",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"jobs",
+								"201"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f-A0EKetB7gbkDT9dT8Eekb0nyQbk\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 22:29:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"deleted\": 201\n}"
+				}
+			]
+		}
+	]
+}

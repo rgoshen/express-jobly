@@ -1,0 +1,627 @@
+{
+	"info": {
+		"_postman_id": "a21d915e-b681-4856-90d8-965bf9947c47",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15VGVzdFVzZXIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MjMzNjEwODh9.LnTB3GguCbCE5gJZSUgiqqW8yC61YRj5dWITYnrcmCs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "773"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"305-RQje0nJtsDN8/6wsTrerppFW1VE\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 22:38:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"users\": [\n        {\n            \"username\": \"myTestUser\",\n            \"firstName\": \"My\",\n            \"lastName\": \"TestUser\",\n            \"email\": \"test.user@email.com\",\n            \"isAdmin\": true\n        },\n        {\n            \"username\": \"testUser\",\n            \"firstName\": \"My\",\n            \"lastName\": \"TestUser\",\n            \"email\": \"test.user@email.com\",\n            \"isAdmin\": false\n        },\n        {\n            \"username\": \"testUser2\",\n            \"firstName\": \"My\",\n            \"lastName\": \"TestUser\",\n            \"email\": \"test.user@email.com\",\n            \"isAdmin\": false\n        },\n        {\n            \"username\": \"testUser5\",\n            \"firstName\": \"My\",\n            \"lastName\": \"TestUser\",\n            \"email\": \"test.user@email.com\",\n            \"isAdmin\": false\n        },\n        {\n            \"username\": \"testadmin\",\n            \"firstName\": \"Test\",\n            \"lastName\": \"Admin!\",\n            \"email\": \"joel@joelburton.com\",\n            \"isAdmin\": true\n        },\n        {\n            \"username\": \"testuser\",\n            \"firstName\": \"Test\",\n            \"lastName\": \"User\",\n            \"email\": \"joel@joelburton.com\",\n            \"isAdmin\": false\n        },\n        {\n            \"username\": \"u-new\",\n            \"firstName\": \"First-new\",\n            \"lastName\": \"Last-new\",\n            \"email\": \"new@email.com\",\n            \"isAdmin\": false\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get User by Username",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15VGVzdFVzZXIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MjMzNjEwODh9.LnTB3GguCbCE5gJZSUgiqqW8yC61YRj5dWITYnrcmCs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/users/testuser",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"testuser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get User by Username",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/users/testuser",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"users",
+								"testuser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "133"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"85-4L7xVECz3wWY/JcPm7pbm8YdNPI\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 22:42:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"username\": \"testuser\",\n        \"firstName\": \"Test\",\n        \"lastName\": \"User\",\n        \"email\": \"joel@joelburton.com\",\n        \"isAdmin\": false,\n        \"applications\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create New User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15VGVzdFVzZXIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MjMzNjEwODh9.LnTB3GguCbCE5gJZSUgiqqW8yC61YRj5dWITYnrcmCs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"u-new\",\n    \"firstName\":\"First-new\",\n    \"lastName\":\"Last-new\",\n    \"password\":\"password\",\n    \"email\":\"new@email.com\",\n    \"isAdmin\":false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create New User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"u-new\",\n    \"firstName\":\"First-new\",\n    \"lastName\":\"Last-new\",\n    \"password\":\"password\",\n    \"email\":\"new@email.com\",\n    \"isAdmin\":false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "278"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"116-+jx4h0odw85X03jUtYim00+ZpdU\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 22:36:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"username\": \"u-new\",\n        \"firstName\": \"First-new\",\n        \"lastName\": \"Last-new\",\n        \"email\": \"new@email.com\",\n        \"isAdmin\": false\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InUtbmV3IiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTYyMzM2NDU5NX0.ZBb9MIxh8EdVNFStE3WMo4vIJOUE2YaCsXc6pERL_0Q\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Apply to Job",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InUtbmV3IiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTYyMzM2NDU5NX0.ZBb9MIxh8EdVNFStE3WMo4vIJOUE2YaCsXc6pERL_0Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/users/u-new/jobs/161",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"u-new",
+						"jobs",
+						"161"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Apply to Job",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/users/u-new/jobs/161",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"users",
+								"u-new",
+								"jobs",
+								"161"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f-JfsuP2Lf5np2z/1mn+5u/fyemEg\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 22:55:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"applied\": 161\n}"
+				}
+			]
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15VGVzdFVzZXIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MjMzNjEwODh9.LnTB3GguCbCE5gJZSUgiqqW8yC61YRj5dWITYnrcmCs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"firstName\": \"firstName\",\n        \"lastName\": \"User\",\n        \"email\": \"joel@joelburton.com\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/users/testuser",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"testuser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update User",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"firstName\": \"firstName\",\n        \"lastName\": \"User\",\n        \"email\": \"joel@joelburton.com\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/users/testuser",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"users",
+								"testuser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "120"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"78-fUCRlvEMWbSQvlhZOn3YhSODs4U\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 22:45:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"username\": \"testuser\",\n        \"firstName\": \"firstName\",\n        \"lastName\": \"User\",\n        \"email\": \"joel@joelburton.com\",\n        \"isAdmin\": false\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create New User Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15VGVzdFVzZXIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MjMzNjEwODh9.LnTB3GguCbCE5gJZSUgiqqW8yC61YRj5dWITYnrcmCs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/users/u-new",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"u-new"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create New User Copy",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/users/u-new",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"users",
+								"u-new"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "19"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13-VTTjnt/F51tBYXhaIh8EoM6qPAY\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 22:47:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"deleted\": \"u-new\"\n}"
+				}
+			]
+		}
+	]
+}

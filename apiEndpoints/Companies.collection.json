@@ -1,0 +1,886 @@
+{
+	"info": {
+		"_postman_id": "7af1b4ef-ee08-4270-b9fb-ecac67093351",
+		"name": "Companies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Companies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/companies",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"companies"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Companies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/companies",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"companies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "10044"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"273c-InQrgqW5ZcWLskyD/JkWuFMkx4I\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 May 2021 03:25:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"companies\": [\n        {\n            \"handle\": \"anderson-arias-morrow\",\n            \"name\": \"Anderson, Arias and Morrow\",\n            \"description\": \"Somebody program how I. Face give away discussion view act inside. Your official relationship administration here.\",\n            \"numEmployees\": 245,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"arnold-berger-townsend\",\n            \"name\": \"Arnold, Berger and Townsend\",\n            \"description\": \"Kind crime at perhaps beat. Enjoy deal purpose serve begin or thought. Congress everything miss tend.\",\n            \"numEmployees\": 795,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"ayala-buchanan\",\n            \"name\": \"Ayala-Buchanan\",\n            \"description\": \"Make radio physical southern. His white on attention kitchen market upon. Represent west open seven. Particularly subject billion much score thank bag somebody.\",\n            \"numEmployees\": 309,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"baker-santos\",\n            \"name\": \"Baker-Santos\",\n            \"description\": \"Compare certain use. Writer time lay word garden. Resource task interesting voice.\",\n            \"numEmployees\": 225,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"bauer-gallagher\",\n            \"name\": \"Bauer-Gallagher\",\n            \"description\": \"Difficult ready trip question produce produce someone.\",\n            \"numEmployees\": 862,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"boyd-evans\",\n            \"name\": \"Boyd-Evans\",\n            \"description\": \"Build respond generation tree. No five keep. Happy medical back fine focus suffer modern.\",\n            \"numEmployees\": 698,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"burton-ltd\",\n            \"name\": \"Burton Ltd\",\n            \"description\": \"Cover couple speech bar cell measure movement finally. Nation pull inside.\",\n            \"numEmployees\": 610,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"carr-wells-jones\",\n            \"name\": \"Carr, Wells and Jones\",\n            \"description\": \"Human medical throw book pick possible. Maybe yeah word beat treatment impact campaign.\",\n            \"numEmployees\": 27,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"davis-davis\",\n            \"name\": \"Davis-Davis\",\n            \"description\": \"Career participant difficult. Decide claim particular century society. Question growth two staff.\",\n            \"numEmployees\": 23,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"edwards-lee-reese\",\n            \"name\": \"Edwards, Lee and Reese\",\n            \"description\": \"To much recent it reality coach decision Mr. Dog language evidence minute either deep situation pattern. Other cold bad loss surface real show.\",\n            \"numEmployees\": 744,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"erickson-inc\",\n            \"name\": \"Erickson Inc\",\n            \"description\": \"Interesting environment owner beautiful school politics. General friend hair player dinner last administration teacher.\",\n            \"numEmployees\": 267,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"foster-rice\",\n            \"name\": \"Foster-Rice\",\n            \"description\": \"Either relate himself. Source TV data one general. Actually than seat eight.\",\n            \"numEmployees\": 901,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"garcia-ray\",\n            \"name\": \"Garcia-Ray\",\n            \"description\": \"Laugh low follow fear. Politics main size fine.\",\n            \"numEmployees\": 217,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"garner-michael\",\n            \"name\": \"Garner-Michael\",\n            \"description\": \"Necessary thousand parent since discuss director. Visit machine skill five the.\",\n            \"numEmployees\": 940,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"gillespie-smith\",\n            \"name\": \"Gillespie-Smith\",\n            \"description\": \"Candidate ability democratic make drug. Player themselves like front. Over through style loss win very when.\",\n            \"numEmployees\": 302,\n            \"logoUrl\": \"/logos/logo1.png\"\n        },\n        {\n            \"handle\": \"graham-herring-lane\",\n            \"name\": \"Graham, Herring and Lane\",\n            \"description\": \"Enough attack return. Fall gas someone her another point those. Star public painting show concern.\",\n            \"numEmployees\": 188,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"hall-davis\",\n            \"name\": \"Hall-Davis\",\n            \"description\": \"Adult go economic off into. Suddenly happy according only common. Father plant wrong free traditional.\",\n            \"numEmployees\": 749,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"hall-mills\",\n            \"name\": \"Hall-Mills\",\n            \"description\": \"Change stage tell note hundred. Worry where program wait.\",\n            \"numEmployees\": 266,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"hudson-inc\",\n            \"name\": \"Hudson Inc\",\n            \"description\": \"End now meet staff. Long government force why bar. Provide bring hope staff almost many be a.\",\n            \"numEmployees\": 627,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"humphrey-llc\",\n            \"name\": \"Humphrey LLC\",\n            \"description\": \"Agent actually able paper nor. Tell then court full agree without assume.\",\n            \"numEmployees\": 678,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"ingram-ferguson-rubio\",\n            \"name\": \"Ingram, Ferguson and Rubio\",\n            \"description\": \"Human summer field mean impact could exactly. Business read north project will. Left dream use Democrat.\",\n            \"numEmployees\": 753,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"jackson-sons\",\n            \"name\": \"Jackson and Sons\",\n            \"description\": \"President couple political sit create.\",\n            \"numEmployees\": 649,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"jackson-davila-conley\",\n            \"name\": \"Jackson, Davila and Conley\",\n            \"description\": \"Consider with build either.\",\n            \"numEmployees\": 813,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"logan-miller\",\n            \"name\": \"Logan-Miller\",\n            \"description\": \"Pattern hand where never. Social across ability which structure.\",\n            \"numEmployees\": 429,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"martinez-daniels\",\n            \"name\": \"Martinez-Daniels\",\n            \"description\": \"Five source market nation. Drop foreign raise pass.\",\n            \"numEmployees\": 12,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"mejia-scott-ryan\",\n            \"name\": \"Mejia, Scott and Ryan\",\n            \"description\": \"General traditional late situation discussion dog. Before best up strategy about direction.\",\n            \"numEmployees\": null,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"miller-woods-hernandez\",\n            \"name\": \"Miller, Woods and Hernandez\",\n            \"description\": \"Including theory protect reveal energy himself probably. Test leave mother area however.\",\n            \"numEmployees\": 444,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"mitchell-brown\",\n            \"name\": \"Mitchell-Brown\",\n            \"description\": \"Republican truth church generation voice price issue.\",\n            \"numEmployees\": 288,\n            \"logoUrl\": \"/logos/logo1.png\"\n        },\n        {\n            \"handle\": \"moore-plc\",\n            \"name\": \"Moore PLC\",\n            \"description\": \"Magazine thing eight shake window might they organization. Environmental it bag green.\",\n            \"numEmployees\": 100,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"morgan-sullivan\",\n            \"name\": \"Morgan-Sullivan\",\n            \"description\": \"Own once artist part put authority wait. Focus free even. Why friend civil visit.\",\n            \"numEmployees\": 409,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"mueller-moore\",\n            \"name\": \"Mueller-Moore\",\n            \"description\": \"Edge may report though least pressure likely. Cost short appear program hair seven.\",\n            \"numEmployees\": 932,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"norman-harvey\",\n            \"name\": \"Norman-Harvey\",\n            \"description\": \"Drop along test material education. Opportunity forget campaign federal certainly total hair.\",\n            \"numEmployees\": null,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"owen-newton\",\n            \"name\": \"Owen-Newton\",\n            \"description\": \"Red compare try way. Bed standard again number wrong force. Stop exactly agent product economy someone. North describe site manager employee customer.\",\n            \"numEmployees\": 953,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"perez-miller\",\n            \"name\": \"Perez-Miller\",\n            \"description\": \"Space one approach wife son. Themselves give necessary follow employee return feel. Step animal doctor sign water early.\",\n            \"numEmployees\": 298,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"pugh-ltd\",\n            \"name\": \"Pugh Ltd\",\n            \"description\": \"Believe reflect perform TV son.\",\n            \"numEmployees\": 87,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"reynolds-greene\",\n            \"name\": \"Reynolds-Greene\",\n            \"description\": \"Effect win area officer office economy. Congress travel would resource difficult. Nice president mind dinner.\",\n            \"numEmployees\": 343,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"rivas-llc\",\n            \"name\": \"Rivas LLC\",\n            \"description\": \"Would road lot research wide mouth. Resource along office drug.\",\n            \"numEmployees\": 552,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"robbins-marsh-martin\",\n            \"name\": \"Robbins, Marsh and Martin\",\n            \"description\": \"Now never worry usually another ability concern hair. Fly lot six protect participant. Teach through head.\",\n            \"numEmployees\": 709,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"russo-gillespie-conrad\",\n            \"name\": \"Russo, Gillespie and Conrad\",\n            \"description\": \"South sound knowledge guy. Up I size anyone issue drop. Agent light significant mouth while.\",\n            \"numEmployees\": 398,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"salas-group\",\n            \"name\": \"Salas Group\",\n            \"description\": \"Central whom mouth partner bring newspaper special city. Show second cost newspaper can early play.\",\n            \"numEmployees\": 624,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"scott-smith\",\n            \"name\": \"Scott-Smith\",\n            \"description\": \"Room newspaper foot. Student daughter their themselves top almost near. Wait time recently it street follow medical nothing.\",\n            \"numEmployees\": 993,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"sellers-bryant\",\n            \"name\": \"Sellers-Bryant\",\n            \"description\": \"Language discussion mission soon wait according executive. Financial say husband anyone money politics. Dinner action purpose mouth environment I white.\",\n            \"numEmployees\": 369,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"smith-llc\",\n            \"name\": \"Smith LLC\",\n            \"description\": \"Statement use per mission method. Order truth method.\",\n            \"numEmployees\": 908,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"stone-stewart\",\n            \"name\": \"Stone-Stewart\",\n            \"description\": \"Require successful family but. Traditional article late eight lose common send budget. Better opportunity law country various represent strong probably.\",\n            \"numEmployees\": 459,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"taylor-yu-lee\",\n            \"name\": \"Taylor, Yu and Lee\",\n            \"description\": \"Down bag serve. Officer season company.\",\n            \"numEmployees\": 226,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"thomas-sons\",\n            \"name\": \"Thomas and Sons\",\n            \"description\": \"Book detail scene continue. Art strategy because list two.\",\n            \"numEmployees\": 51,\n            \"logoUrl\": \"/logos/logo1.png\"\n        },\n        {\n            \"handle\": \"watson-davis\",\n            \"name\": \"Watson-Davis\",\n            \"description\": \"Year join loss.\",\n            \"numEmployees\": 819,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"weber-hernandez\",\n            \"name\": \"Weber-Hernandez\",\n            \"description\": \"Contain product south picture scientist.\",\n            \"numEmployees\": 681,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"wiggins-frederick-boyer\",\n            \"name\": \"Wiggins, Frederick and Boyer\",\n            \"description\": \"Institution structure say argue bit. Each option high executive easy pattern. Majority white hour there reach drive produce.\",\n            \"numEmployees\": 298,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"willis-henson-miller\",\n            \"name\": \"Willis, Henson and Miller\",\n            \"description\": \"About dream practice. Father significant senior health within four.\",\n            \"numEmployees\": 821,\n            \"logoUrl\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "All Companies by Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/companies?name=hall",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"companies"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "hall",
+							"description": "string"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Companies by Name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/companies?name=hall",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"companies"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "hall",
+									"description": "string"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "392"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"188-oM/xquoz1iTbpOO3vDRTQnFeMlM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 May 2021 03:45:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"companies\": [\n        {\n            \"handle\": \"hall-davis\",\n            \"name\": \"Hall-Davis\",\n            \"description\": \"Adult go economic off into. Suddenly happy according only common. Father plant wrong free traditional.\",\n            \"numEmployees\": 749,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"hall-mills\",\n            \"name\": \"Hall-Mills\",\n            \"description\": \"Change stage tell note hundred. Worry where program wait.\",\n            \"numEmployees\": 266,\n            \"logoUrl\": \"/logos/logo3.png\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "All Companies by Maximum Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/companies?maxEmployees=500",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"companies"
+					],
+					"query": [
+						{
+							"key": "maxEmployees",
+							"value": "500",
+							"description": "integer"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Companies by Maximum Employees",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/companies?maxEmployees=500",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"companies"
+							],
+							"query": [
+								{
+									"key": "maxEmployees",
+									"value": "500",
+									"description": "integer"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5177"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1439-ccr1XbtHdD1NyCpaOsYtLtxhtHI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 May 2021 03:45:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"companies\": [\n        {\n            \"handle\": \"anderson-arias-morrow\",\n            \"name\": \"Anderson, Arias and Morrow\",\n            \"description\": \"Somebody program how I. Face give away discussion view act inside. Your official relationship administration here.\",\n            \"numEmployees\": 245,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"ayala-buchanan\",\n            \"name\": \"Ayala-Buchanan\",\n            \"description\": \"Make radio physical southern. His white on attention kitchen market upon. Represent west open seven. Particularly subject billion much score thank bag somebody.\",\n            \"numEmployees\": 309,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"baker-santos\",\n            \"name\": \"Baker-Santos\",\n            \"description\": \"Compare certain use. Writer time lay word garden. Resource task interesting voice.\",\n            \"numEmployees\": 225,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"carr-wells-jones\",\n            \"name\": \"Carr, Wells and Jones\",\n            \"description\": \"Human medical throw book pick possible. Maybe yeah word beat treatment impact campaign.\",\n            \"numEmployees\": 27,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"davis-davis\",\n            \"name\": \"Davis-Davis\",\n            \"description\": \"Career participant difficult. Decide claim particular century society. Question growth two staff.\",\n            \"numEmployees\": 23,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"erickson-inc\",\n            \"name\": \"Erickson Inc\",\n            \"description\": \"Interesting environment owner beautiful school politics. General friend hair player dinner last administration teacher.\",\n            \"numEmployees\": 267,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"garcia-ray\",\n            \"name\": \"Garcia-Ray\",\n            \"description\": \"Laugh low follow fear. Politics main size fine.\",\n            \"numEmployees\": 217,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"gillespie-smith\",\n            \"name\": \"Gillespie-Smith\",\n            \"description\": \"Candidate ability democratic make drug. Player themselves like front. Over through style loss win very when.\",\n            \"numEmployees\": 302,\n            \"logoUrl\": \"/logos/logo1.png\"\n        },\n        {\n            \"handle\": \"graham-herring-lane\",\n            \"name\": \"Graham, Herring and Lane\",\n            \"description\": \"Enough attack return. Fall gas someone her another point those. Star public painting show concern.\",\n            \"numEmployees\": 188,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"hall-mills\",\n            \"name\": \"Hall-Mills\",\n            \"description\": \"Change stage tell note hundred. Worry where program wait.\",\n            \"numEmployees\": 266,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"logan-miller\",\n            \"name\": \"Logan-Miller\",\n            \"description\": \"Pattern hand where never. Social across ability which structure.\",\n            \"numEmployees\": 429,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"martinez-daniels\",\n            \"name\": \"Martinez-Daniels\",\n            \"description\": \"Five source market nation. Drop foreign raise pass.\",\n            \"numEmployees\": 12,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"miller-woods-hernandez\",\n            \"name\": \"Miller, Woods and Hernandez\",\n            \"description\": \"Including theory protect reveal energy himself probably. Test leave mother area however.\",\n            \"numEmployees\": 444,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"mitchell-brown\",\n            \"name\": \"Mitchell-Brown\",\n            \"description\": \"Republican truth church generation voice price issue.\",\n            \"numEmployees\": 288,\n            \"logoUrl\": \"/logos/logo1.png\"\n        },\n        {\n            \"handle\": \"moore-plc\",\n            \"name\": \"Moore PLC\",\n            \"description\": \"Magazine thing eight shake window might they organization. Environmental it bag green.\",\n            \"numEmployees\": 100,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"morgan-sullivan\",\n            \"name\": \"Morgan-Sullivan\",\n            \"description\": \"Own once artist part put authority wait. Focus free even. Why friend civil visit.\",\n            \"numEmployees\": 409,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"perez-miller\",\n            \"name\": \"Perez-Miller\",\n            \"description\": \"Space one approach wife son. Themselves give necessary follow employee return feel. Step animal doctor sign water early.\",\n            \"numEmployees\": 298,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"pugh-ltd\",\n            \"name\": \"Pugh Ltd\",\n            \"description\": \"Believe reflect perform TV son.\",\n            \"numEmployees\": 87,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"reynolds-greene\",\n            \"name\": \"Reynolds-Greene\",\n            \"description\": \"Effect win area officer office economy. Congress travel would resource difficult. Nice president mind dinner.\",\n            \"numEmployees\": 343,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"russo-gillespie-conrad\",\n            \"name\": \"Russo, Gillespie and Conrad\",\n            \"description\": \"South sound knowledge guy. Up I size anyone issue drop. Agent light significant mouth while.\",\n            \"numEmployees\": 398,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"sellers-bryant\",\n            \"name\": \"Sellers-Bryant\",\n            \"description\": \"Language discussion mission soon wait according executive. Financial say husband anyone money politics. Dinner action purpose mouth environment I white.\",\n            \"numEmployees\": 369,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"stone-stewart\",\n            \"name\": \"Stone-Stewart\",\n            \"description\": \"Require successful family but. Traditional article late eight lose common send budget. Better opportunity law country various represent strong probably.\",\n            \"numEmployees\": 459,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"taylor-yu-lee\",\n            \"name\": \"Taylor, Yu and Lee\",\n            \"description\": \"Down bag serve. Officer season company.\",\n            \"numEmployees\": 226,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"thomas-sons\",\n            \"name\": \"Thomas and Sons\",\n            \"description\": \"Book detail scene continue. Art strategy because list two.\",\n            \"numEmployees\": 51,\n            \"logoUrl\": \"/logos/logo1.png\"\n        },\n        {\n            \"handle\": \"wiggins-frederick-boyer\",\n            \"name\": \"Wiggins, Frederick and Boyer\",\n            \"description\": \"Institution structure say argue bit. Each option high executive easy pattern. Majority white hour there reach drive produce.\",\n            \"numEmployees\": 298,\n            \"logoUrl\": \"/logos/logo2.png\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "All Companies by Minimum Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/companies?minEmployees=500",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"companies"
+					],
+					"query": [
+						{
+							"key": "minEmployees",
+							"value": "500",
+							"description": "integer"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Companies by Minimum Employees",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/companies?minEmployees=500",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"companies"
+							],
+							"query": [
+								{
+									"key": "minEmployees",
+									"value": "500",
+									"description": "integer"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4455"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1167-7PNfB9NKl+uLt0rz+Ipeq1y8lEc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 May 2021 03:45:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"companies\": [\n        {\n            \"handle\": \"arnold-berger-townsend\",\n            \"name\": \"Arnold, Berger and Townsend\",\n            \"description\": \"Kind crime at perhaps beat. Enjoy deal purpose serve begin or thought. Congress everything miss tend.\",\n            \"numEmployees\": 795,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"bauer-gallagher\",\n            \"name\": \"Bauer-Gallagher\",\n            \"description\": \"Difficult ready trip question produce produce someone.\",\n            \"numEmployees\": 862,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"boyd-evans\",\n            \"name\": \"Boyd-Evans\",\n            \"description\": \"Build respond generation tree. No five keep. Happy medical back fine focus suffer modern.\",\n            \"numEmployees\": 698,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"burton-ltd\",\n            \"name\": \"Burton Ltd\",\n            \"description\": \"Cover couple speech bar cell measure movement finally. Nation pull inside.\",\n            \"numEmployees\": 610,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"edwards-lee-reese\",\n            \"name\": \"Edwards, Lee and Reese\",\n            \"description\": \"To much recent it reality coach decision Mr. Dog language evidence minute either deep situation pattern. Other cold bad loss surface real show.\",\n            \"numEmployees\": 744,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"foster-rice\",\n            \"name\": \"Foster-Rice\",\n            \"description\": \"Either relate himself. Source TV data one general. Actually than seat eight.\",\n            \"numEmployees\": 901,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"garner-michael\",\n            \"name\": \"Garner-Michael\",\n            \"description\": \"Necessary thousand parent since discuss director. Visit machine skill five the.\",\n            \"numEmployees\": 940,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"hall-davis\",\n            \"name\": \"Hall-Davis\",\n            \"description\": \"Adult go economic off into. Suddenly happy according only common. Father plant wrong free traditional.\",\n            \"numEmployees\": 749,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"hudson-inc\",\n            \"name\": \"Hudson Inc\",\n            \"description\": \"End now meet staff. Long government force why bar. Provide bring hope staff almost many be a.\",\n            \"numEmployees\": 627,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"humphrey-llc\",\n            \"name\": \"Humphrey LLC\",\n            \"description\": \"Agent actually able paper nor. Tell then court full agree without assume.\",\n            \"numEmployees\": 678,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"ingram-ferguson-rubio\",\n            \"name\": \"Ingram, Ferguson and Rubio\",\n            \"description\": \"Human summer field mean impact could exactly. Business read north project will. Left dream use Democrat.\",\n            \"numEmployees\": 753,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"jackson-sons\",\n            \"name\": \"Jackson and Sons\",\n            \"description\": \"President couple political sit create.\",\n            \"numEmployees\": 649,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"jackson-davila-conley\",\n            \"name\": \"Jackson, Davila and Conley\",\n            \"description\": \"Consider with build either.\",\n            \"numEmployees\": 813,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"mueller-moore\",\n            \"name\": \"Mueller-Moore\",\n            \"description\": \"Edge may report though least pressure likely. Cost short appear program hair seven.\",\n            \"numEmployees\": 932,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"owen-newton\",\n            \"name\": \"Owen-Newton\",\n            \"description\": \"Red compare try way. Bed standard again number wrong force. Stop exactly agent product economy someone. North describe site manager employee customer.\",\n            \"numEmployees\": 953,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"rivas-llc\",\n            \"name\": \"Rivas LLC\",\n            \"description\": \"Would road lot research wide mouth. Resource along office drug.\",\n            \"numEmployees\": 552,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"robbins-marsh-martin\",\n            \"name\": \"Robbins, Marsh and Martin\",\n            \"description\": \"Now never worry usually another ability concern hair. Fly lot six protect participant. Teach through head.\",\n            \"numEmployees\": 709,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"salas-group\",\n            \"name\": \"Salas Group\",\n            \"description\": \"Central whom mouth partner bring newspaper special city. Show second cost newspaper can early play.\",\n            \"numEmployees\": 624,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"scott-smith\",\n            \"name\": \"Scott-Smith\",\n            \"description\": \"Room newspaper foot. Student daughter their themselves top almost near. Wait time recently it street follow medical nothing.\",\n            \"numEmployees\": 993,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"smith-llc\",\n            \"name\": \"Smith LLC\",\n            \"description\": \"Statement use per mission method. Order truth method.\",\n            \"numEmployees\": 908,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"watson-davis\",\n            \"name\": \"Watson-Davis\",\n            \"description\": \"Year join loss.\",\n            \"numEmployees\": 819,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"weber-hernandez\",\n            \"name\": \"Weber-Hernandez\",\n            \"description\": \"Contain product south picture scientist.\",\n            \"numEmployees\": 681,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"willis-henson-miller\",\n            \"name\": \"Willis, Henson and Miller\",\n            \"description\": \"About dream practice. Father significant senior health within four.\",\n            \"numEmployees\": 821,\n            \"logoUrl\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "All Companies by Minimum or Maximum Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/companies?minEmployees=250&maxEmployees=500",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"companies"
+					],
+					"query": [
+						{
+							"key": "minEmployees",
+							"value": "250",
+							"description": "integer"
+						},
+						{
+							"key": "maxEmployees",
+							"value": "500",
+							"description": "integer"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Companies by Minimum or Maximum Employees",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/companies?minEmployees=250&maxEmployees=500",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"companies"
+							],
+							"query": [
+								{
+									"key": "minEmployees",
+									"value": "250",
+									"description": "integer"
+								},
+								{
+									"key": "maxEmployees",
+									"value": "500",
+									"description": "integer"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c35-M46TTRbmuYZam4f5zeCKLUFno/k\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 May 2021 03:46:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"companies\": [\n        {\n            \"handle\": \"ayala-buchanan\",\n            \"name\": \"Ayala-Buchanan\",\n            \"description\": \"Make radio physical southern. His white on attention kitchen market upon. Represent west open seven. Particularly subject billion much score thank bag somebody.\",\n            \"numEmployees\": 309,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"erickson-inc\",\n            \"name\": \"Erickson Inc\",\n            \"description\": \"Interesting environment owner beautiful school politics. General friend hair player dinner last administration teacher.\",\n            \"numEmployees\": 267,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"gillespie-smith\",\n            \"name\": \"Gillespie-Smith\",\n            \"description\": \"Candidate ability democratic make drug. Player themselves like front. Over through style loss win very when.\",\n            \"numEmployees\": 302,\n            \"logoUrl\": \"/logos/logo1.png\"\n        },\n        {\n            \"handle\": \"hall-mills\",\n            \"name\": \"Hall-Mills\",\n            \"description\": \"Change stage tell note hundred. Worry where program wait.\",\n            \"numEmployees\": 266,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"logan-miller\",\n            \"name\": \"Logan-Miller\",\n            \"description\": \"Pattern hand where never. Social across ability which structure.\",\n            \"numEmployees\": 429,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"miller-woods-hernandez\",\n            \"name\": \"Miller, Woods and Hernandez\",\n            \"description\": \"Including theory protect reveal energy himself probably. Test leave mother area however.\",\n            \"numEmployees\": 444,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"mitchell-brown\",\n            \"name\": \"Mitchell-Brown\",\n            \"description\": \"Republican truth church generation voice price issue.\",\n            \"numEmployees\": 288,\n            \"logoUrl\": \"/logos/logo1.png\"\n        },\n        {\n            \"handle\": \"morgan-sullivan\",\n            \"name\": \"Morgan-Sullivan\",\n            \"description\": \"Own once artist part put authority wait. Focus free even. Why friend civil visit.\",\n            \"numEmployees\": 409,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"perez-miller\",\n            \"name\": \"Perez-Miller\",\n            \"description\": \"Space one approach wife son. Themselves give necessary follow employee return feel. Step animal doctor sign water early.\",\n            \"numEmployees\": 298,\n            \"logoUrl\": \"/logos/logo4.png\"\n        },\n        {\n            \"handle\": \"reynolds-greene\",\n            \"name\": \"Reynolds-Greene\",\n            \"description\": \"Effect win area officer office economy. Congress travel would resource difficult. Nice president mind dinner.\",\n            \"numEmployees\": 343,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"russo-gillespie-conrad\",\n            \"name\": \"Russo, Gillespie and Conrad\",\n            \"description\": \"South sound knowledge guy. Up I size anyone issue drop. Agent light significant mouth while.\",\n            \"numEmployees\": 398,\n            \"logoUrl\": \"/logos/logo2.png\"\n        },\n        {\n            \"handle\": \"sellers-bryant\",\n            \"name\": \"Sellers-Bryant\",\n            \"description\": \"Language discussion mission soon wait according executive. Financial say husband anyone money politics. Dinner action purpose mouth environment I white.\",\n            \"numEmployees\": 369,\n            \"logoUrl\": \"/logos/logo3.png\"\n        },\n        {\n            \"handle\": \"stone-stewart\",\n            \"name\": \"Stone-Stewart\",\n            \"description\": \"Require successful family but. Traditional article late eight lose common send budget. Better opportunity law country various represent strong probably.\",\n            \"numEmployees\": 459,\n            \"logoUrl\": null\n        },\n        {\n            \"handle\": \"wiggins-frederick-boyer\",\n            \"name\": \"Wiggins, Frederick and Boyer\",\n            \"description\": \"Institution structure say argue bit. Each option high executive easy pattern. Majority white hour there reach drive produce.\",\n            \"numEmployees\": 298,\n            \"logoUrl\": \"/logos/logo2.png\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "All Companies by Name or Minimum Employees or Maximum Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/companies?name=hall&minEmployees=250&maxEmployees=500",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"companies"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "hall",
+							"description": "string"
+						},
+						{
+							"key": "minEmployees",
+							"value": "250",
+							"description": "integer"
+						},
+						{
+							"key": "maxEmployees",
+							"value": "500",
+							"description": "integer"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Companies by Name or Minimum Employees or Maximum Employees",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/companies?name=hall&minEmployees=250&maxEmployees=500",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"companies"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "hall",
+									"description": "string"
+								},
+								{
+									"key": "minEmployees",
+									"value": "250",
+									"description": "integer"
+								},
+								{
+									"key": "maxEmployees",
+									"value": "500",
+									"description": "integer"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "181"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b5-JB+VyhUS9I19UtHqOd/lS7O0G6I\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 May 2021 03:46:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"companies\": [\n        {\n            \"handle\": \"hall-mills\",\n            \"name\": \"Hall-Mills\",\n            \"description\": \"Change stage tell note hundred. Worry where program wait.\",\n            \"numEmployees\": 266,\n            \"logoUrl\": \"/logos/logo3.png\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Company",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15VGVzdFVzZXIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MjMzNjEwODh9.LnTB3GguCbCE5gJZSUgiqqW8yC61YRj5dWITYnrcmCs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"handle\":\"newc\",\n    \"name\":\"New Company\",\n    \"logoUrl\":\"http://new.img\",\n    \"description\":\"New description\",\n    \"numEmployees\":5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/companies",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"companies"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add Company",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"handle\":\"newc\",\n    \"name\":\"New Company\",\n    \"logoUrl\":\"http://new.img\",\n    \"description\":\"New description\",\n    \"numEmployees\":5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/companies",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"companies"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "126"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7e-6R6sTzYr0sm4sjmqHzdQ7q8iYSo\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 21:45:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"company\": {\n        \"handle\": \"newc\",\n        \"name\": \"New Company\",\n        \"description\": \"New description\",\n        \"numEmployees\": 5,\n        \"logoUrl\": \"http://new.img\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Company",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15VGVzdFVzZXIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MjMzNjEwODh9.LnTB3GguCbCE5gJZSUgiqqW8yC61YRj5dWITYnrcmCs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numEmployees\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/companies/newc",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"companies",
+						"newc"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Company",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numEmployees\": 15\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/companies/newc",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"companies",
+								"newc"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "127"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7f-04LEkxZ4chV9ur5H9uvfr6emwpA\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 21:59:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"company\": {\n        \"handle\": \"newc\",\n        \"name\": \"New Company\",\n        \"description\": \"New description\",\n        \"numEmployees\": 15,\n        \"logoUrl\": \"http://new.img\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Company",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15VGVzdFVzZXIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MjMzNjEwODh9.LnTB3GguCbCE5gJZSUgiqqW8yC61YRj5dWITYnrcmCs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/companies/newc",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"companies",
+						"newc"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Company",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/companies/newc",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"companies",
+								"newc"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "18"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12-uBFovRFCW+C/NS2HNQnWf851SgQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Jun 2021 22:01:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"deleted\": \"newc\"\n}"
+				}
+			]
+		}
+	]
+}
